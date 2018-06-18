@@ -17,6 +17,8 @@
 		B6B2C49720D853F90057ABD9 /* FruitAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */; };
 		B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49B20D855760057ABD9 /* FruitsViewController.swift */; };
 		B6B2C49E20D856FB0057ABD9 /* FruitsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */; };
+		B6B2C4A120D8580F0057ABD9 /* FruitsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4A020D8580F0057ABD9 /* FruitsRouter.swift */; };
+		B6B2C4A420D858590057ABD9 /* FruitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4A320D858590057ABD9 /* FruitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppRouter.swift; sourceTree = "<group>"; };
 		B6B2C49B20D855760057ABD9 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
 		B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FruitsViewController.storyboard; sourceTree = "<group>"; };
+		B6B2C4A020D8580F0057ABD9 /* FruitsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRouter.swift; sourceTree = "<group>"; };
+		B6B2C4A320D858590057ABD9 /* FruitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewModel.swift; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,9 +136,9 @@
 		B6B2C49420D853470057ABD9 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				B6B2C49520D853AF0057ABD9 /* router */,
 				B680833120D846CE0090362C /* AppDelegate.swift */,
 				B6B2C49220D853410057ABD9 /* FruitApp.swift */,
+				B6B2C49520D853AF0057ABD9 /* router */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -157,6 +161,8 @@
 		B6B2C49920D854BD0057ABD9 /* Fruit */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C4A220D8584D0057ABD9 /* viewmodel */,
+				B6B2C49F20D857F30057ABD9 /* router */,
 				B6B2C49A20D854C70057ABD9 /* viewcontroller */,
 			);
 			path = Fruit;
@@ -169,6 +175,22 @@
 				B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */,
 			);
 			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		B6B2C49F20D857F30057ABD9 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C4A020D8580F0057ABD9 /* FruitsRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		B6B2C4A220D8584D0057ABD9 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C4A320D858590057ABD9 /* FruitsViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -384,9 +406,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */,
+				B6B2C4A120D8580F0057ABD9 /* FruitsRouter.swift in Sources */,
 				B680833220D846CE0090362C /* AppDelegate.swift in Sources */,
 				B6B2C49320D853410057ABD9 /* FruitApp.swift in Sources */,
 				B6B2C49720D853F90057ABD9 /* FruitAppRouter.swift in Sources */,
+				B6B2C4A420D858590057ABD9 /* FruitsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
