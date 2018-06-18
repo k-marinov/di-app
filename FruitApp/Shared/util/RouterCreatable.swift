@@ -11,15 +11,15 @@ protocol RouterCreatable {
 extension RouterCreatable {
 
     func create(with componentCreatable: ComponentCreatable) -> FruitAppRouter {
-        return ShoppingAppRouter(componentCreatable: componentCreatable)
+        return FruitAppRouter(componentCreatable: componentCreatable)
     }
 
     func create() -> FruitsRouter {
-        return ProductsRouter()
+        return FruitssRouter()
     }
 
     func create() -> FruitDetailRouter {
-        return ProductDetailRouter()
+        return FruitDetailRouter()
     }
 
 }

@@ -19,7 +19,6 @@
 		B6B2C49E20D856FB0057ABD9 /* FruitsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */; };
 		B6B2C4A120D8580F0057ABD9 /* FruitsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4A020D8580F0057ABD9 /* FruitsRouter.swift */; };
 		B6B2C4A420D858590057ABD9 /* FruitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4A320D858590057ABD9 /* FruitsViewModel.swift */; };
-		B6B2C4AB20D859A00057ABD9 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4A720D859A00057ABD9 /* String+Extension.swift */; };
 		B6B2C4AD20D859A00057ABD9 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4A920D859A00057ABD9 /* Reactive+Extension.swift */; };
 		B6B2C4B320D859B80057ABD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4B020D859B80057ABD9 /* TableViewDataSource.swift */; };
 		B6B2C4B420D859B80057ABD9 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4B120D859B80057ABD9 /* TableViewDelegate.swift */; };
@@ -48,6 +47,10 @@
 		B6B2C4EE20D85B390057ABD9 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4E320D85B390057ABD9 /* Resource.swift */; };
 		B6B2C4EF20D85B390057ABD9 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4E420D85B390057ABD9 /* ApiRequest.swift */; };
 		B6B2C4F020D85B390057ABD9 /* ModelableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4E520D85B390057ABD9 /* ModelableViewController.swift */; };
+		B6B2C4F320D85BED0057ABD9 /* FruitRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4F220D85BED0057ABD9 /* FruitRemote.swift */; };
+		B6B2C4F620D85C340057ABD9 /* FruitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4F520D85C340057ABD9 /* FruitsRequest.swift */; };
+		B6B2C4F920D85CA20057ABD9 /* FruitsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4F820D85CA20057ABD9 /* FruitsResource.swift */; };
+		B6B2C4FB20D85D290057ABD9 /* FruitResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4FA20D85D290057ABD9 /* FruitResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +80,6 @@
 		B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FruitsViewController.storyboard; sourceTree = "<group>"; };
 		B6B2C4A020D8580F0057ABD9 /* FruitsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRouter.swift; sourceTree = "<group>"; };
 		B6B2C4A320D858590057ABD9 /* FruitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewModel.swift; sourceTree = "<group>"; };
-		B6B2C4A720D859A00057ABD9 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B6B2C4A920D859A00057ABD9 /* Reactive+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
 		B6B2C4B020D859B80057ABD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		B6B2C4B120D859B80057ABD9 /* TableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,10 @@
 		B6B2C4E320D85B390057ABD9 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		B6B2C4E420D85B390057ABD9 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		B6B2C4E520D85B390057ABD9 /* ModelableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelableViewController.swift; sourceTree = "<group>"; };
+		B6B2C4F220D85BED0057ABD9 /* FruitRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRemote.swift; sourceTree = "<group>"; };
+		B6B2C4F520D85C340057ABD9 /* FruitsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRequest.swift; sourceTree = "<group>"; };
+		B6B2C4F820D85CA20057ABD9 /* FruitsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsResource.swift; sourceTree = "<group>"; };
+		B6B2C4FA20D85D290057ABD9 /* FruitResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitResource.swift; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +230,9 @@
 		B6B2C49920D854BD0057ABD9 /* Fruit */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C4F720D85C950057ABD9 /* resource */,
+				B6B2C4F420D85C280057ABD9 /* request */,
+				B6B2C4F120D85BD40057ABD9 /* remote */,
 				B6B2C4A220D8584D0057ABD9 /* viewmodel */,
 				B6B2C49F20D857F30057ABD9 /* router */,
 				B6B2C49A20D854C70057ABD9 /* viewcontroller */,
@@ -259,7 +268,6 @@
 		B6B2C4A520D859A00057ABD9 /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				B6B2C4A720D859A00057ABD9 /* String+Extension.swift */,
 				B6B2C4A920D859A00057ABD9 /* Reactive+Extension.swift */,
 			);
 			path = extension;
@@ -326,6 +334,31 @@
 				B6B2C4E520D85B390057ABD9 /* ModelableViewController.swift */,
 			);
 			path = protocol;
+			sourceTree = "<group>";
+		};
+		B6B2C4F120D85BD40057ABD9 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C4F220D85BED0057ABD9 /* FruitRemote.swift */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+		B6B2C4F420D85C280057ABD9 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C4F520D85C340057ABD9 /* FruitsRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		B6B2C4F720D85C950057ABD9 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C4F820D85CA20057ABD9 /* FruitsResource.swift */,
+				B6B2C4FA20D85D290057ABD9 /* FruitResource.swift */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -540,13 +573,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B2C4F920D85CA20057ABD9 /* FruitsResource.swift in Sources */,
 				B6B2C4B920D85A810057ABD9 /* ApiError.swift in Sources */,
 				B6B2C4D820D85AC20057ABD9 /* ComponentCreatable.swift in Sources */,
 				B6B2C4D320D85AC20057ABD9 /* ComponentCreator.swift in Sources */,
-				B6B2C4AB20D859A00057ABD9 /* String+Extension.swift in Sources */,
 				B6B2C4EC20D85B390057ABD9 /* ViewModel.swift in Sources */,
 				B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */,
 				B6B2C4C120D85A900057ABD9 /* ApiResponse.swift in Sources */,
+				B6B2C4FB20D85D290057ABD9 /* FruitResource.swift in Sources */,
 				B6B2C4EE20D85B390057ABD9 /* Resource.swift in Sources */,
 				B6B2C4A120D8580F0057ABD9 /* FruitsRouter.swift in Sources */,
 				B680833220D846CE0090362C /* AppDelegate.swift in Sources */,
@@ -573,7 +607,9 @@
 				B6B2C4E920D85B390057ABD9 /* Navigation.swift in Sources */,
 				B6B2C4AD20D859A00057ABD9 /* Reactive+Extension.swift in Sources */,
 				B6B2C4B420D859B80057ABD9 /* TableViewDelegate.swift in Sources */,
+				B6B2C4F620D85C340057ABD9 /* FruitsRequest.swift in Sources */,
 				B6B2C4D220D85AC20057ABD9 /* ApiClient.swift in Sources */,
+				B6B2C4F320D85BED0057ABD9 /* FruitRemote.swift in Sources */,
 				B6B2C4D920D85AC20057ABD9 /* StringUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,11 @@ struct ApiResponse {
 
     private func createResource<RESOURCE: Resource>(resourceType: RESOURCE.Type, data: Data?) -> Resource? {
         if hasData(withData: data) {
-            return RESOURCE(json: JSON(data!))
+            do {
+                return try JSONDecoder().decode(RESOURCE.self, from: data!)
+            } catch let error {
+                print("decoding failed log error", error)
+            }
         }
         return nil
     }
