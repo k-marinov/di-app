@@ -10,12 +10,13 @@
 		42094E3ACDD58A9C3C96A6C0 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */; };
 		52867599A5E63541964F200D /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F485DA0F52F61807EA2EE96B /* Pods_FruitAppTests.framework */; };
 		B680833220D846CE0090362C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680833120D846CE0090362C /* AppDelegate.swift */; };
-		B680833420D846CE0090362C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680833320D846CE0090362C /* ViewController.swift */; };
-		B680833720D846CE0090362C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680833520D846CE0090362C /* Main.storyboard */; };
 		B680833920D846D00090362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B680833820D846D00090362C /* Assets.xcassets */; };
 		B680833C20D846D00090362C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680833A20D846D00090362C /* LaunchScreen.storyboard */; };
 		B680834720D846D00090362C /* FruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680834620D846D00090362C /* FruitAppTests.swift */; };
 		B6B2C49320D853410057ABD9 /* FruitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49220D853410057ABD9 /* FruitApp.swift */; };
+		B6B2C49720D853F90057ABD9 /* FruitAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */; };
+		B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49B20D855760057ABD9 /* FruitsViewController.swift */; };
+		B6B2C49E20D856FB0057ABD9 /* FruitsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +34,6 @@
 		A9F1C1048BD9A933682B53A0 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B680832E20D846CE0090362C /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B680833120D846CE0090362C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B680833320D846CE0090362C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B680833620D846CE0090362C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B680833820D846D00090362C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B680833B20D846D00090362C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B680833D20D846D00090362C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +41,9 @@
 		B680834620D846D00090362C /* FruitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppTests.swift; sourceTree = "<group>"; };
 		B680834820D846D00090362C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B2C49220D853410057ABD9 /* FruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitApp.swift; sourceTree = "<group>"; };
+		B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppRouter.swift; sourceTree = "<group>"; };
+		B6B2C49B20D855760057ABD9 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
+		B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FruitsViewController.storyboard; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				B6B2C49420D853470057ABD9 /* App */,
-				B680833320D846CE0090362C /* ViewController.swift */,
-				B680833520D846CE0090362C /* Main.storyboard */,
+				B6B2C49920D854BD0057ABD9 /* Fruit */,
+				B6B2C49820D8542C0057ABD9 /* Shared */,
 				B6B2C48D20D84A8E0057ABD9 /* SupportFiles */,
 				B680833D20D846D00090362C /* Info.plist */,
 			);
@@ -140,8 +142,33 @@
 		B6B2C49520D853AF0057ABD9 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */,
 			);
 			path = router;
+			sourceTree = "<group>";
+		};
+		B6B2C49820D8542C0057ABD9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B6B2C49920D854BD0057ABD9 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C49A20D854C70057ABD9 /* viewcontroller */,
+			);
+			path = Fruit;
+			sourceTree = "<group>";
+		};
+		B6B2C49A20D854C70057ABD9 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C49B20D855760057ABD9 /* FruitsViewController.swift */,
+				B6B2C49D20D856FB0057ABD9 /* FruitsViewController.storyboard */,
+			);
+			path = viewcontroller;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -243,7 +270,7 @@
 			files = (
 				B680833C20D846D00090362C /* LaunchScreen.storyboard in Resources */,
 				B680833920D846D00090362C /* Assets.xcassets in Resources */,
-				B680833720D846CE0090362C /* Main.storyboard in Resources */,
+				B6B2C49E20D856FB0057ABD9 /* FruitsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,9 +383,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B680833420D846CE0090362C /* ViewController.swift in Sources */,
+				B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */,
 				B680833220D846CE0090362C /* AppDelegate.swift in Sources */,
 				B6B2C49320D853410057ABD9 /* FruitApp.swift in Sources */,
+				B6B2C49720D853F90057ABD9 /* FruitAppRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,14 +409,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B680833520D846CE0090362C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B680833620D846CE0090362C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B680833A20D846D00090362C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
