@@ -12,6 +12,7 @@
 		B63DA15220D9BD8600BEA8A0 /* MockComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */; };
 		B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */; };
 		B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */; };
+		B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15B20D9C05100BEA8A0 /* FruitsViewControllerTests.swift */; };
 		B680833220D846CE0090362C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680833120D846CE0090362C /* AppDelegate.swift */; };
 		B680833920D846D00090362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B680833820D846D00090362C /* Assets.xcassets */; };
 		B680833C20D846D00090362C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680833A20D846D00090362C /* LaunchScreen.storyboard */; };
@@ -93,6 +94,7 @@
 		B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComponentCreator.swift; sourceTree = "<group>"; };
 		B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitService.swift; sourceTree = "<group>"; };
 		B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitDetailRouter.swift; sourceTree = "<group>"; };
+		B63DA15B20D9C05100BEA8A0 /* FruitsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsViewControllerTests.swift; sourceTree = "<group>"; };
 		B680832E20D846CE0090362C /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B680833120D846CE0090362C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B680833820D846D00090362C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,6 +197,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B63DA15720D9BFFE00BEA8A0 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				B63DA15A20D9C01A00BEA8A0 /* viewmodel */,
+				B63DA15920D9C01700BEA8A0 /* service */,
+				B63DA15820D9C01400BEA8A0 /* viewcontroller */,
+			);
+			path = Fruit;
+			sourceTree = "<group>";
+		};
+		B63DA15820D9C01400BEA8A0 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				B63DA15B20D9C05100BEA8A0 /* FruitsViewControllerTests.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		B63DA15920D9C01700BEA8A0 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		B63DA15A20D9C01A00BEA8A0 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		B680832520D846CE0090362C = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +265,7 @@
 		B680834520D846D00090362C /* FruitAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B63DA15720D9BFFE00BEA8A0 /* Fruit */,
 				B6B2C54320D9AE6B0057ABD9 /* Mocks */,
 				B6B2C53820D9AD860057ABD9 /* Shared */,
 				B6B2C52920D9AA500057ABD9 /* Mothers */,
@@ -839,6 +874,7 @@
 				B6B2C53720D9AA500057ABD9 /* FruitMother.swift in Sources */,
 				B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */,
 				B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */,
+				B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */,
 				B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */,
 				B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */,
 				B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */,
