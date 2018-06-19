@@ -1,4 +1,4 @@
-struct FruitResource: Resource {
+struct FruitResource: Resource, TableViewItem {
 
     private(set) var type: String
     private(set) var price: Int

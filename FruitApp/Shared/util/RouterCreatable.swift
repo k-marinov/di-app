@@ -15,7 +15,7 @@ extension RouterCreatable {
     }
 
     func create() -> FruitsRouter {
-        return FruitssRouter()
+        return FruitsRouter()
     }
 
     func create() -> FruitDetailRouter {

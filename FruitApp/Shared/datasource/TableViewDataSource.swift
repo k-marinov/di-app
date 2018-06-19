@@ -32,4 +32,8 @@ class TableViewDataSource<ITEM: TableViewItem, CELL: TableViewCell>: NSObject, U
         return items.count
     }
 
+    func findItem(at indexPath: IndexPath) -> TableViewItem {
+        return items[indexPath.row]
+    }
+
 }

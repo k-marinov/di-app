@@ -6,8 +6,8 @@ class FruitsViewModel: ViewModel {
     private(set) var isLoading: PublishSubject<Bool> = PublishSubject<Bool>()
     private(set) var reloadData: PublishSubject<Void> = PublishSubject<Void>()
     private(set) var dataSource = TableViewDataSource<FruitResource, FruitCell>()
-    private(set) var delegate: TableViewDataDelegate = TableViewDataDelegate()
-    private(set) var fruitService: fruitService
+    private(set) var delegate: TableViewDelegate = TableViewDelegate()
+    private(set) var fruitService: FruitService
     private(set) var fruitDetailRouter: FruitDetailRouter!
     private var componentCreatable: ComponentCreatable
 
@@ -19,7 +19,7 @@ class FruitsViewModel: ViewModel {
     }
 
     func subscribe() {
-        delegate.didSelectItem()
+        delegate.didSelectRow()
             .map { self.findFruit(at: $0) }
             .subscribe(onNext: { [weak self] fruit in
                 guard let `self` = self else { return }
@@ -27,7 +27,7 @@ class FruitsViewModel: ViewModel {
             }).disposed(by: disposeBag)
     }
 
-    func loadProducts() -> Observable<Void> {
+    func loadFruits() -> Observable<Void> {
         return fruitService.findAllFruits(with: FruitsRequest())
             .observeOn(MainScheduler.instance)
             .do(onNext: { [weak self] newProducts in

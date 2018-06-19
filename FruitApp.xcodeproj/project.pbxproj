@@ -54,6 +54,9 @@
 		B6B2C50220D995A30057ABD9 /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50120D995A30057ABD9 /* FruitDetailViewController.swift */; };
 		B6B2C50420D996340057ABD9 /* FruitDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C50320D996340057ABD9 /* FruitDetailViewController.storyboard */; };
 		B6B2C50620D996A60057ABD9 /* FruitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50520D996A60057ABD9 /* FruitDetailViewModel.swift */; };
+		B6B2C50920D998100057ABD9 /* FruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50820D998100057ABD9 /* FruitService.swift */; };
+		B6B2C50C20D998970057ABD9 /* FruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50B20D998970057ABD9 /* FruitDetailRouter.swift */; };
+		B6B2C50F20D9998A0057ABD9 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50E20D9998A0057ABD9 /* FruitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,9 @@
 		B6B2C50120D995A30057ABD9 /* FruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
 		B6B2C50320D996340057ABD9 /* FruitDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FruitDetailViewController.storyboard; sourceTree = "<group>"; };
 		B6B2C50520D996A60057ABD9 /* FruitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewModel.swift; sourceTree = "<group>"; };
+		B6B2C50820D998100057ABD9 /* FruitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitService.swift; sourceTree = "<group>"; };
+		B6B2C50B20D998970057ABD9 /* FruitDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailRouter.swift; sourceTree = "<group>"; };
+		B6B2C50E20D9998A0057ABD9 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +243,8 @@
 		B6B2C49920D854BD0057ABD9 /* Fruit */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C50D20D999810057ABD9 /* view */,
+				B6B2C50720D998000057ABD9 /* service */,
 				B6B2C4F720D85C950057ABD9 /* resource */,
 				B6B2C4F420D85C280057ABD9 /* request */,
 				B6B2C4F120D85BD40057ABD9 /* remote */,
@@ -371,26 +379,11 @@
 		B6B2C4FC20D994D40057ABD9 /* FruitDetail */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C50A20D998820057ABD9 /* router */,
 				B6B2C50020D994F80057ABD9 /* viewmodel */,
 				B6B2C4FF20D994F50057ABD9 /* viewcontroller */,
-				B6B2C4FE20D994F30057ABD9 /* New Group1 */,
-				B6B2C4FD20D994F00057ABD9 /* New Group */,
 			);
 			path = FruitDetail;
-			sourceTree = "<group>";
-		};
-		B6B2C4FD20D994F00057ABD9 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		B6B2C4FE20D994F30057ABD9 /* New Group1 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		B6B2C4FF20D994F50057ABD9 /* viewcontroller */ = {
@@ -408,6 +401,30 @@
 				B6B2C50520D996A60057ABD9 /* FruitDetailViewModel.swift */,
 			);
 			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		B6B2C50720D998000057ABD9 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C50820D998100057ABD9 /* FruitService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		B6B2C50A20D998820057ABD9 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C50B20D998970057ABD9 /* FruitDetailRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		B6B2C50D20D999810057ABD9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C50E20D9998A0057ABD9 /* FruitCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -643,9 +660,12 @@
 				B6B2C4C320D85A900057ABD9 /* HttpMethod.swift in Sources */,
 				B6B2C4D120D85AC20057ABD9 /* Service.swift in Sources */,
 				B6B2C4F020D85B390057ABD9 /* ModelableViewController.swift in Sources */,
+				B6B2C50920D998100057ABD9 /* FruitService.swift in Sources */,
 				B6B2C49320D853410057ABD9 /* FruitApp.swift in Sources */,
 				B6B2C4EA20D85B390057ABD9 /* TableViewCell.swift in Sources */,
 				B6B2C4D720D85AC20057ABD9 /* RouterCreatable.swift in Sources */,
+				B6B2C50F20D9998A0057ABD9 /* FruitCell.swift in Sources */,
+				B6B2C50C20D998970057ABD9 /* FruitDetailRouter.swift in Sources */,
 				B6B2C4B320D859B80057ABD9 /* TableViewDataSource.swift in Sources */,
 				B6B2C4EB20D85B390057ABD9 /* ViewControllerCreatable.swift in Sources */,
 				B6B2C49720D853F90057ABD9 /* FruitAppRouter.swift in Sources */,

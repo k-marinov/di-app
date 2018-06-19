@@ -3,12 +3,11 @@ import RxSwift
 
 class FruitsViewController: UIViewController, ModelableViewController {
 
-    @IBOutlet weak var tableView: UICollectionView!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
-
     private let disposeBag: DisposeBag = DisposeBag()
+
+    @IBOutlet weak var tableView: UITableView!
     private(set) lazy var fruitsViewModel: FruitsViewModel = {
-        return self.viewModel as! ProductsViewModel
+        return self.viewModel as! FruitsViewModel
     }()
     var viewModel: ViewModel!
 
@@ -23,15 +22,10 @@ class FruitsViewController: UIViewController, ModelableViewController {
 
     private func setUp() {
         setUpTableView()
+        setUpNavigationBarTitle()
     }
 
     func subscribe() {
-        fruitsViewModel.isLoading
-            .asObservable()
-            .observeOn(MainScheduler.instance)
-            .bind(to: activityIndicatorView.rx.isLoading)
-            .disposed(by: disposeBag)
-
         fruitsViewModel.reloadData
             .asObservable()
             .observeOn(MainScheduler.instance)

@@ -1,7 +1,7 @@
 import UIKit
 import RxSwift
 
-class CollectionViewDelegate: NSObject, UITableViewDelegate {
+class TableViewDelegate: NSObject, UITableViewDelegate {
 
     private let didSelectRowAt: PublishSubject<IndexPath> = PublishSubject<IndexPath>()
 
