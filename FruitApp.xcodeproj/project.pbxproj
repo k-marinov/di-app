@@ -51,6 +51,9 @@
 		B6B2C4F620D85C340057ABD9 /* FruitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4F520D85C340057ABD9 /* FruitsRequest.swift */; };
 		B6B2C4F920D85CA20057ABD9 /* FruitsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4F820D85CA20057ABD9 /* FruitsResource.swift */; };
 		B6B2C4FB20D85D290057ABD9 /* FruitResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4FA20D85D290057ABD9 /* FruitResource.swift */; };
+		B6B2C50220D995A30057ABD9 /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50120D995A30057ABD9 /* FruitDetailViewController.swift */; };
+		B6B2C50420D996340057ABD9 /* FruitDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C50320D996340057ABD9 /* FruitDetailViewController.storyboard */; };
+		B6B2C50620D996A60057ABD9 /* FruitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50520D996A60057ABD9 /* FruitDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,9 @@
 		B6B2C4F520D85C340057ABD9 /* FruitsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsRequest.swift; sourceTree = "<group>"; };
 		B6B2C4F820D85CA20057ABD9 /* FruitsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsResource.swift; sourceTree = "<group>"; };
 		B6B2C4FA20D85D290057ABD9 /* FruitResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitResource.swift; sourceTree = "<group>"; };
+		B6B2C50120D995A30057ABD9 /* FruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
+		B6B2C50320D996340057ABD9 /* FruitDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FruitDetailViewController.storyboard; sourceTree = "<group>"; };
+		B6B2C50520D996A60057ABD9 /* FruitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewModel.swift; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +178,7 @@
 			children = (
 				B6B2C49420D853470057ABD9 /* App */,
 				B6B2C49920D854BD0057ABD9 /* Fruit */,
+				B6B2C4FC20D994D40057ABD9 /* FruitDetail */,
 				B6B2C49820D8542C0057ABD9 /* Shared */,
 				B6B2C48D20D84A8E0057ABD9 /* SupportFiles */,
 				B680833D20D846D00090362C /* Info.plist */,
@@ -361,6 +368,48 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		B6B2C4FC20D994D40057ABD9 /* FruitDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C50020D994F80057ABD9 /* viewmodel */,
+				B6B2C4FF20D994F50057ABD9 /* viewcontroller */,
+				B6B2C4FE20D994F30057ABD9 /* New Group1 */,
+				B6B2C4FD20D994F00057ABD9 /* New Group */,
+			);
+			path = FruitDetail;
+			sourceTree = "<group>";
+		};
+		B6B2C4FD20D994F00057ABD9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B6B2C4FE20D994F30057ABD9 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		B6B2C4FF20D994F50057ABD9 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C50120D995A30057ABD9 /* FruitDetailViewController.swift */,
+				B6B2C50320D996340057ABD9 /* FruitDetailViewController.storyboard */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		B6B2C50020D994F80057ABD9 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C50520D996A60057ABD9 /* FruitDetailViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +510,7 @@
 				B680833C20D846D00090362C /* LaunchScreen.storyboard in Resources */,
 				B680833920D846D00090362C /* Assets.xcassets in Resources */,
 				B6B2C49E20D856FB0057ABD9 /* FruitsViewController.storyboard in Resources */,
+				B6B2C50420D996340057ABD9 /* FruitDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +629,7 @@
 				B6B2C4D320D85AC20057ABD9 /* ComponentCreator.swift in Sources */,
 				B6B2C4EC20D85B390057ABD9 /* ViewModel.swift in Sources */,
 				B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */,
+				B6B2C50620D996A60057ABD9 /* FruitDetailViewModel.swift in Sources */,
 				B6B2C4C120D85A900057ABD9 /* ApiResponse.swift in Sources */,
 				B6B2C4FB20D85D290057ABD9 /* FruitResource.swift in Sources */,
 				B6B2C4EE20D85B390057ABD9 /* Resource.swift in Sources */,
@@ -608,6 +659,7 @@
 				B6B2C4AD20D859A00057ABD9 /* Reactive+Extension.swift in Sources */,
 				B6B2C4B420D859B80057ABD9 /* TableViewDelegate.swift in Sources */,
 				B6B2C4F620D85C340057ABD9 /* FruitsRequest.swift in Sources */,
+				B6B2C50220D995A30057ABD9 /* FruitDetailViewController.swift in Sources */,
 				B6B2C4D220D85AC20057ABD9 /* ApiClient.swift in Sources */,
 				B6B2C4F320D85BED0057ABD9 /* FruitRemote.swift in Sources */,
 				B6B2C4D920D85AC20057ABD9 /* StringUtil.swift in Sources */,
