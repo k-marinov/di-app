@@ -1,8 +1,8 @@
-struct FruitResource: Resource, TableViewItem {
+struct FruitResource: Resource, PriceFormattable, WeightFormattable, FruitDetailRepresentable, TableViewItem {
 
-    private(set) var type: String
-    private(set) var price: Int
-    private(set) var weight: Int
+    private var type: String
+    private var price: Int
+    private var weight: Int
 
     init(from decoder: Decoder) throws {
         let value: KeyedDecodingContainer<CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
@@ -15,6 +15,18 @@ struct FruitResource: Resource, TableViewItem {
         case type
         case price
         case weight
+    }
+
+    func name() -> String {
+        return type
+    }
+
+    func priceInPences() -> Int {
+        return price
+    }
+
+    func weightInGrams()  -> Int {
+        return weight
     }
 
 }

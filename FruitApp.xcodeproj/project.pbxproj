@@ -57,6 +57,9 @@
 		B6B2C50920D998100057ABD9 /* FruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50820D998100057ABD9 /* FruitService.swift */; };
 		B6B2C50C20D998970057ABD9 /* FruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50B20D998970057ABD9 /* FruitDetailRouter.swift */; };
 		B6B2C50F20D9998A0057ABD9 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C50E20D9998A0057ABD9 /* FruitCell.swift */; };
+		B6B2C51220D99DE90057ABD9 /* FruitDetailRepsentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51120D99DE90057ABD9 /* FruitDetailRepsentable.swift */; };
+		B6B2C51720D9A2A90057ABD9 /* WeightFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51520D9A24A0057ABD9 /* WeightFormattable.swift */; };
+		B6B2C51820D9A2B10057ABD9 /* PriceFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51320D9A21E0057ABD9 /* PriceFormattable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +127,9 @@
 		B6B2C50820D998100057ABD9 /* FruitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitService.swift; sourceTree = "<group>"; };
 		B6B2C50B20D998970057ABD9 /* FruitDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailRouter.swift; sourceTree = "<group>"; };
 		B6B2C50E20D9998A0057ABD9 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		B6B2C51120D99DE90057ABD9 /* FruitDetailRepsentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailRepsentable.swift; sourceTree = "<group>"; };
+		B6B2C51320D9A21E0057ABD9 /* PriceFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormattable.swift; sourceTree = "<group>"; };
+		B6B2C51520D9A24A0057ABD9 /* WeightFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightFormattable.swift; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +249,7 @@
 		B6B2C49920D854BD0057ABD9 /* Fruit */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C51020D99DD70057ABD9 /* protocol */,
 				B6B2C50D20D999810057ABD9 /* view */,
 				B6B2C50720D998000057ABD9 /* service */,
 				B6B2C4F720D85C950057ABD9 /* resource */,
@@ -347,6 +354,8 @@
 				B6B2C4E320D85B390057ABD9 /* Resource.swift */,
 				B6B2C4E420D85B390057ABD9 /* ApiRequest.swift */,
 				B6B2C4E520D85B390057ABD9 /* ModelableViewController.swift */,
+				B6B2C51320D9A21E0057ABD9 /* PriceFormattable.swift */,
+				B6B2C51520D9A24A0057ABD9 /* WeightFormattable.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -425,6 +434,14 @@
 				B6B2C50E20D9998A0057ABD9 /* FruitCell.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		B6B2C51020D99DD70057ABD9 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C51120D99DE90057ABD9 /* FruitDetailRepsentable.swift */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -649,8 +666,11 @@
 				B6B2C50620D996A60057ABD9 /* FruitDetailViewModel.swift in Sources */,
 				B6B2C4C120D85A900057ABD9 /* ApiResponse.swift in Sources */,
 				B6B2C4FB20D85D290057ABD9 /* FruitResource.swift in Sources */,
+				B6B2C51820D9A2B10057ABD9 /* PriceFormattable.swift in Sources */,
+				B6B2C51220D99DE90057ABD9 /* FruitDetailRepsentable.swift in Sources */,
 				B6B2C4EE20D85B390057ABD9 /* Resource.swift in Sources */,
 				B6B2C4A120D8580F0057ABD9 /* FruitsRouter.swift in Sources */,
+				B6B2C51720D9A2A90057ABD9 /* WeightFormattable.swift in Sources */,
 				B680833220D846CE0090362C /* AppDelegate.swift in Sources */,
 				B6B2C4BB20D85A810057ABD9 /* ClassError.swift in Sources */,
 				B6B2C4EF20D85B390057ABD9 /* ApiRequest.swift in Sources */,

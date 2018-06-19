@@ -3,15 +3,15 @@ import RxSwift
 class FruitDetailViewModel: ViewModel {
 
     private(set) var fruitService: FruitService
-    private let fruit: FruitResource
+    private let fruit: FruitDetailRepresentable
 
-    required init(componentCreatable: ComponentCreatable, fruit: FruitResource) {
+    required init(componentCreatable: ComponentCreatable, fruit: FruitDetailRepresentable) {
         fruitService = componentCreatable.create(with: componentCreatable)
         self.fruit = fruit
     }
 
-    func fruitDetail() -> Observable<FruitResource> {
-        return Observable<FruitResource>.just(fruit)
+    func fruitDetail() -> Observable<FruitDetailRepresentable> {
+        return Observable<FruitDetailRepresentable>.just(fruit)
     }
 
 }

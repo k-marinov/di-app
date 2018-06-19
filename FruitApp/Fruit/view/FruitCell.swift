@@ -13,7 +13,7 @@ class FruitCell: UITableViewCell, TableViewCell {
         let fruit = tableViewItem as! FruitResource
         resetContent()
 
-        nameLabel.text = fruit.type
+        nameLabel.text = fruit.name()
     }
 
     private func resetContent() {
