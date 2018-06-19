@@ -70,6 +70,7 @@
 		B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C53E20D9AE0A0057ABD9 /* Constants.swift */; };
 		B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */; };
 		B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */; };
+		B6B2C54820D9B0730057ABD9 /* ApiResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		B6B2C53E20D9AE0A0057ABD9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitHttpMocker.swift; sourceTree = "<group>"; };
 		B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitsRequest.swift; sourceTree = "<group>"; };
+		B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseTests.swift; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -500,6 +502,7 @@
 		B6B2C53820D9AD860057ABD9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C54620D9B0680057ABD9 /* model */,
 				B6B2C53920D9AD8E0057ABD9 /* protocol */,
 			);
 			path = Shared;
@@ -528,6 +531,14 @@
 				B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B6B2C54620D9B0680057ABD9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -807,6 +818,7 @@
 				B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */,
 				B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */,
 				B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */,
+				B6B2C54820D9B0730057ABD9 /* ApiResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
