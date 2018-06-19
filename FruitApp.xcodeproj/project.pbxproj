@@ -12,7 +12,6 @@
 		B680833220D846CE0090362C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680833120D846CE0090362C /* AppDelegate.swift */; };
 		B680833920D846D00090362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B680833820D846D00090362C /* Assets.xcassets */; };
 		B680833C20D846D00090362C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680833A20D846D00090362C /* LaunchScreen.storyboard */; };
-		B680834720D846D00090362C /* FruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680834620D846D00090362C /* FruitAppTests.swift */; };
 		B6B2C49320D853410057ABD9 /* FruitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49220D853410057ABD9 /* FruitApp.swift */; };
 		B6B2C49720D853F90057ABD9 /* FruitAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */; };
 		B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C49B20D855760057ABD9 /* FruitsViewController.swift */; };
@@ -38,7 +37,6 @@
 		B6B2C4D620D85AC20057ABD9 /* UtilityCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4CC20D85AC20057ABD9 /* UtilityCreatable.swift */; };
 		B6B2C4D720D85AC20057ABD9 /* RouterCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4CD20D85AC20057ABD9 /* RouterCreatable.swift */; };
 		B6B2C4D820D85AC20057ABD9 /* ComponentCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4CE20D85AC20057ABD9 /* ComponentCreatable.swift */; };
-		B6B2C4D920D85AC20057ABD9 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4CF20D85AC20057ABD9 /* StringUtil.swift */; };
 		B6B2C4E820D85B390057ABD9 /* TableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4DD20D85B390057ABD9 /* TableViewItem.swift */; };
 		B6B2C4E920D85B390057ABD9 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4DE20D85B390057ABD9 /* Navigation.swift */; };
 		B6B2C4EA20D85B390057ABD9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C4DF20D85B390057ABD9 /* TableViewCell.swift */; };
@@ -60,6 +58,18 @@
 		B6B2C51220D99DE90057ABD9 /* FruitDetailRepsentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51120D99DE90057ABD9 /* FruitDetailRepsentable.swift */; };
 		B6B2C51720D9A2A90057ABD9 /* WeightFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51520D9A24A0057ABD9 /* WeightFormattable.swift */; };
 		B6B2C51820D9A2B10057ABD9 /* PriceFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51320D9A21E0057ABD9 /* PriceFormattable.swift */; };
+		B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51A20D9A9E80057ABD9 /* FileHelper.swift */; };
+		B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51B20D9A9E80057ABD9 /* RxCollector.swift */; };
+		B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51C20D9A9E80057ABD9 /* NibCreator.swift */; };
+		B6B2C52620D9A9F60057ABD9 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C52220D9A9F60057ABD9 /* empty.json */; };
+		B6B2C52720D9A9F60057ABD9 /* apple.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C52320D9A9F60057ABD9 /* apple.json */; };
+		B6B2C52820D9A9F60057ABD9 /* fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C52420D9A9F60057ABD9 /* fruits.json */; };
+		B6B2C53520D9AA500057ABD9 /* HttpResponseMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C52E20D9AA500057ABD9 /* HttpResponseMother.swift */; };
+		B6B2C53720D9AA500057ABD9 /* FruitMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C53020D9AA500057ABD9 /* FruitMother.swift */; };
+		B6B2C53B20D9AD990057ABD9 /* ApiRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C53A20D9AD990057ABD9 /* ApiRequestTests.swift */; };
+		B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C53E20D9AE0A0057ABD9 /* Constants.swift */; };
+		B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */; };
+		B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +91,6 @@
 		B680833B20D846D00090362C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B680833D20D846D00090362C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B680834220D846D00090362C /* FruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B680834620D846D00090362C /* FruitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppTests.swift; sourceTree = "<group>"; };
 		B680834820D846D00090362C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B2C49220D853410057ABD9 /* FruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitApp.swift; sourceTree = "<group>"; };
 		B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppRouter.swift; sourceTree = "<group>"; };
@@ -108,7 +117,6 @@
 		B6B2C4CC20D85AC20057ABD9 /* UtilityCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityCreatable.swift; sourceTree = "<group>"; };
 		B6B2C4CD20D85AC20057ABD9 /* RouterCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterCreatable.swift; sourceTree = "<group>"; };
 		B6B2C4CE20D85AC20057ABD9 /* ComponentCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentCreatable.swift; sourceTree = "<group>"; };
-		B6B2C4CF20D85AC20057ABD9 /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 		B6B2C4DD20D85B390057ABD9 /* TableViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewItem.swift; sourceTree = "<group>"; };
 		B6B2C4DE20D85B390057ABD9 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		B6B2C4DF20D85B390057ABD9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -130,6 +138,18 @@
 		B6B2C51120D99DE90057ABD9 /* FruitDetailRepsentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailRepsentable.swift; sourceTree = "<group>"; };
 		B6B2C51320D9A21E0057ABD9 /* PriceFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormattable.swift; sourceTree = "<group>"; };
 		B6B2C51520D9A24A0057ABD9 /* WeightFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightFormattable.swift; sourceTree = "<group>"; };
+		B6B2C51A20D9A9E80057ABD9 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		B6B2C51B20D9A9E80057ABD9 /* RxCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCollector.swift; sourceTree = "<group>"; };
+		B6B2C51C20D9A9E80057ABD9 /* NibCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCreator.swift; sourceTree = "<group>"; };
+		B6B2C52220D9A9F60057ABD9 /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		B6B2C52320D9A9F60057ABD9 /* apple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apple.json; sourceTree = "<group>"; };
+		B6B2C52420D9A9F60057ABD9 /* fruits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fruits.json; sourceTree = "<group>"; };
+		B6B2C52E20D9AA500057ABD9 /* HttpResponseMother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponseMother.swift; sourceTree = "<group>"; };
+		B6B2C53020D9AA500057ABD9 /* FruitMother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitMother.swift; sourceTree = "<group>"; };
+		B6B2C53A20D9AD990057ABD9 /* ApiRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestTests.swift; sourceTree = "<group>"; };
+		B6B2C53E20D9AE0A0057ABD9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitHttpMocker.swift; sourceTree = "<group>"; };
+		B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitsRequest.swift; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +221,12 @@
 		B680834520D846D00090362C /* FruitAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B680834620D846D00090362C /* FruitAppTests.swift */,
+				B6B2C54320D9AE6B0057ABD9 /* Mocks */,
+				B6B2C53820D9AD860057ABD9 /* Shared */,
+				B6B2C52920D9AA500057ABD9 /* Mothers */,
+				B6B2C53C20D9AE0A0057ABD9 /* HttpMocks */,
+				B6B2C52020D9A9F60057ABD9 /* Resources */,
+				B6B2C51920D9A9E80057ABD9 /* Helper */,
 				B680834820D846D00090362C /* Info.plist */,
 			);
 			path = FruitAppTests;
@@ -338,7 +363,6 @@
 				B6B2C4CC20D85AC20057ABD9 /* UtilityCreatable.swift */,
 				B6B2C4CD20D85AC20057ABD9 /* RouterCreatable.swift */,
 				B6B2C4CE20D85AC20057ABD9 /* ComponentCreatable.swift */,
-				B6B2C4CF20D85AC20057ABD9 /* StringUtil.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -442,6 +466,68 @@
 				B6B2C51120D99DE90057ABD9 /* FruitDetailRepsentable.swift */,
 			);
 			path = protocol;
+			sourceTree = "<group>";
+		};
+		B6B2C51920D9A9E80057ABD9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C51A20D9A9E80057ABD9 /* FileHelper.swift */,
+				B6B2C51B20D9A9E80057ABD9 /* RxCollector.swift */,
+				B6B2C51C20D9A9E80057ABD9 /* NibCreator.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B6B2C52020D9A9F60057ABD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C52220D9A9F60057ABD9 /* empty.json */,
+				B6B2C52320D9A9F60057ABD9 /* apple.json */,
+				B6B2C52420D9A9F60057ABD9 /* fruits.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6B2C52920D9AA500057ABD9 /* Mothers */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C52E20D9AA500057ABD9 /* HttpResponseMother.swift */,
+				B6B2C53020D9AA500057ABD9 /* FruitMother.swift */,
+			);
+			path = Mothers;
+			sourceTree = "<group>";
+		};
+		B6B2C53820D9AD860057ABD9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C53920D9AD8E0057ABD9 /* protocol */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B6B2C53920D9AD8E0057ABD9 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C53A20D9AD990057ABD9 /* ApiRequestTests.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		B6B2C53C20D9AE0A0057ABD9 /* HttpMocks */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C53E20D9AE0A0057ABD9 /* Constants.swift */,
+				B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */,
+			);
+			path = HttpMocks;
+			sourceTree = "<group>";
+		};
+		B6B2C54320D9AE6B0057ABD9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -552,6 +638,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B2C52720D9A9F60057ABD9 /* apple.json in Resources */,
+				B6B2C52820D9A9F60057ABD9 /* fruits.json in Resources */,
+				B6B2C52620D9A9F60057ABD9 /* empty.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +791,6 @@
 				B6B2C50220D995A30057ABD9 /* FruitDetailViewController.swift in Sources */,
 				B6B2C4D220D85AC20057ABD9 /* ApiClient.swift in Sources */,
 				B6B2C4F320D85BED0057ABD9 /* FruitRemote.swift in Sources */,
-				B6B2C4D920D85AC20057ABD9 /* StringUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,7 +798,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B680834720D846D00090362C /* FruitAppTests.swift in Sources */,
+				B6B2C53B20D9AD990057ABD9 /* ApiRequestTests.swift in Sources */,
+				B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */,
+				B6B2C53520D9AA500057ABD9 /* HttpResponseMother.swift in Sources */,
+				B6B2C53720D9AA500057ABD9 /* FruitMother.swift in Sources */,
+				B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */,
+				B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */,
+				B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */,
+				B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */,
+				B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,8 +30,8 @@ class FruitsViewModel: ViewModel {
     func loadFruits() -> Observable<Void> {
         return fruitService.findAllFruits(with: FruitsRequest())
             .observeOn(MainScheduler.instance)
-            .do(onNext: { [weak self] newProducts in
-                self?.dataSource.appendOnce(contentsOf: newProducts)
+            .do(onNext: { [weak self] newFruits in
+                self?.dataSource.appendOnce(contentsOf: newFruits)
                 }, onError: { [weak self] error in
                     self?.onLoadFruitsCompletedWithError()
                 }, onCompleted: {  [weak self] in
