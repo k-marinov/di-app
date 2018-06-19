@@ -9,6 +9,14 @@ class FruitCell: UITableViewCell, TableViewCell {
         super.awakeFromNib()
     }
 
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     func configureCell(with tableViewItem: TableViewItem) {
         let fruit = tableViewItem as! FruitResource
         resetContent()

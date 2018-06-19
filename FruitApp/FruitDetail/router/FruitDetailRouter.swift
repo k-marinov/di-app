@@ -4,7 +4,7 @@ class FruitDetailRouter: ViewControllerCreatable, Navigation {
 
     func showFruitDetail(
         componentCreatable: ComponentCreatable,
-        fruit: FruitResource,
+        fruit: FruitDetailRepresentable,
         animated: Bool = true) {
         let viewController: FruitDetailViewController = createViewController(
             with: FruitDetailViewModel(componentCreatable: componentCreatable, fruit: fruit),

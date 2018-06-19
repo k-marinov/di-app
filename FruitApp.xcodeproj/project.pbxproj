@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		42094E3ACDD58A9C3C96A6C0 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */; };
 		52867599A5E63541964F200D /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F485DA0F52F61807EA2EE96B /* Pods_FruitAppTests.framework */; };
+		B63DA15220D9BD8600BEA8A0 /* MockComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */; };
+		B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */; };
+		B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */; };
 		B680833220D846CE0090362C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680833120D846CE0090362C /* AppDelegate.swift */; };
 		B680833920D846D00090362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B680833820D846D00090362C /* Assets.xcassets */; };
 		B680833C20D846D00090362C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680833A20D846D00090362C /* LaunchScreen.storyboard */; };
@@ -71,6 +74,7 @@
 		B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */; };
 		B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */; };
 		B6B2C54820D9B0730057ABD9 /* ApiResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */; };
+		B6B2C55420D9B5AB0057ABD9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,9 @@
 /* Begin PBXFileReference section */
 		1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F1C1048BD9A933682B53A0 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComponentCreator.swift; sourceTree = "<group>"; };
+		B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitService.swift; sourceTree = "<group>"; };
+		B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitDetailRouter.swift; sourceTree = "<group>"; };
 		B680832E20D846CE0090362C /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B680833120D846CE0090362C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B680833820D846D00090362C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +159,7 @@
 		B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitHttpMocker.swift; sourceTree = "<group>"; };
 		B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitsRequest.swift; sourceTree = "<group>"; };
 		B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseTests.swift; sourceTree = "<group>"; };
+		B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +272,7 @@
 		B6B2C49820D8542C0057ABD9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B6B2C54D20D9B5AA0057ABD9 /* extension */,
 				B6B2C4DA20D85B390057ABD9 /* protocol */,
 				B6B2C4C520D85AC20057ABD9 /* util */,
 				B6B2C4C420D85AA90057ABD9 /* model */,
@@ -528,6 +537,9 @@
 		B6B2C54320D9AE6B0057ABD9 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */,
+				B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */,
+				B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */,
 				B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */,
 			);
 			path = Mocks;
@@ -539,6 +551,15 @@
 				B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		B6B2C54D20D9B5AA0057ABD9 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */,
+			);
+			name = extension;
+			path = ../../../ShoppingApp/ShoppingApp/Shared/extension;
 			sourceTree = "<group>";
 		};
 		D0A67ED25200CA259346DAED /* Pods */ = {
@@ -757,6 +778,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B2C55420D9B5AB0057ABD9 /* UITableView+Extension.swift in Sources */,
 				B6B2C4F920D85CA20057ABD9 /* FruitsResource.swift in Sources */,
 				B6B2C4B920D85A810057ABD9 /* ApiError.swift in Sources */,
 				B6B2C4D820D85AC20057ABD9 /* ComponentCreatable.swift in Sources */,
@@ -809,12 +831,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63DA15220D9BD8600BEA8A0 /* MockComponentCreator.swift in Sources */,
 				B6B2C53B20D9AD990057ABD9 /* ApiRequestTests.swift in Sources */,
+				B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */,
 				B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */,
 				B6B2C53520D9AA500057ABD9 /* HttpResponseMother.swift in Sources */,
 				B6B2C53720D9AA500057ABD9 /* FruitMother.swift in Sources */,
 				B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */,
 				B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */,
+				B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */,
 				B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */,
 				B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */,
 				B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */,
