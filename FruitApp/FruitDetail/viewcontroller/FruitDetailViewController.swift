@@ -14,7 +14,13 @@ class FruitDetailViewController: UIViewController, ModelableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fruitDetailViewModel.setDisplayStartDateNow()
         subscribe()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fruitDetailViewModel.logDisplayEvent()
     }
 
     private func subscribe() {

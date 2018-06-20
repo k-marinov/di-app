@@ -13,6 +13,7 @@ class FruitsViewController: UIViewController, ModelableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fruitsViewModel.setDisplayStartDateNow()
         setUp()
         subscribe()
         fruitsViewModel.loadFruits()
@@ -23,6 +24,11 @@ class FruitsViewController: UIViewController, ModelableViewController {
     private func setUp() {
         setUpTableView()
         setUpNavigationBarTitle()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fruitsViewModel.logDisplayEvent()
     }
 
     func subscribe() {

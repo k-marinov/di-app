@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42094E3ACDD58A9C3C96A6C0 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */; };
-		52867599A5E63541964F200D /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F485DA0F52F61807EA2EE96B /* Pods_FruitAppTests.framework */; };
+		525F173D7BACD0645247FCF4 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E4E74CDDD376AE2367F67B /* Pods_FruitApp.framework */; };
 		B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC72E20DAE78E00A3D857 /* FruitServiceTests.swift */; };
 		B60FC73120DAE9EF00A3D857 /* FruitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73020DAE9EF00A3D857 /* FruitsViewModelTests.swift */; };
+		B60FC73520DAF21B00A3D857 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73420DAF21B00A3D857 /* AnalyticsTracker.swift */; };
+		B60FC73820DAF23300A3D857 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73720DAF23300A3D857 /* AnalyticsEvent.swift */; };
+		B60FC73A20DAF50400A3D857 /* AnalyticsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73920DAF50400A3D857 /* AnalyticsRequest.swift */; };
+		B60FC73E20DAF6AF00A3D857 /* AnalyticsEventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73D20DAF6AF00A3D857 /* AnalyticsEventDetail.swift */; };
+		B60FC74120DB151800A3D857 /* AnalyticsDisplayTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC74020DB151800A3D857 /* AnalyticsDisplayTrackable.swift */; };
 		B63DA15220D9BD8600BEA8A0 /* MockComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */; };
 		B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */; };
 		B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */; };
@@ -78,6 +82,7 @@
 		B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */; };
 		B6B2C54820D9B0730057ABD9 /* ApiResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */; };
 		B6B2C55420D9B5AB0057ABD9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */; };
+		BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,10 +96,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9F1C1048BD9A933682B53A0 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3C1950C0D1504FFA5D083776 /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48E4E74CDDD376AE2367F67B /* Pods_FruitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B47C4A6CCF71CAE4112172A /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		80F7E48293A8E78194C34FFF /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		B60FC72E20DAE78E00A3D857 /* FruitServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitServiceTests.swift; sourceTree = "<group>"; };
 		B60FC73020DAE9EF00A3D857 /* FruitsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsViewModelTests.swift; sourceTree = "<group>"; };
+		B60FC73420DAF21B00A3D857 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
+		B60FC73720DAF23300A3D857 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		B60FC73920DAF50400A3D857 /* AnalyticsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRequest.swift; sourceTree = "<group>"; };
+		B60FC73D20DAF6AF00A3D857 /* AnalyticsEventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventDetail.swift; sourceTree = "<group>"; };
+		B60FC74020DB151800A3D857 /* AnalyticsDisplayTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDisplayTrackable.swift; sourceTree = "<group>"; };
 		B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComponentCreator.swift; sourceTree = "<group>"; };
 		B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitService.swift; sourceTree = "<group>"; };
 		B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitDetailRouter.swift; sourceTree = "<group>"; };
@@ -166,10 +178,8 @@
 		B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitsRequest.swift; sourceTree = "<group>"; };
 		B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseTests.swift; sourceTree = "<group>"; };
 		B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
-		DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		F485DA0F52F61807EA2EE96B /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42094E3ACDD58A9C3C96A6C0 /* Pods_FruitApp.framework in Frameworks */,
+				525F173D7BACD0645247FCF4 /* Pods_FruitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,20 +195,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52867599A5E63541964F200D /* Pods_FruitAppTests.framework in Frameworks */,
+				BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BF9FC6BF33D6E59E3EBC1C9 /* Frameworks */ = {
+		90834CB1DF877B66145D36F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */,
-				F485DA0F52F61807EA2EE96B /* Pods_FruitAppTests.framework */,
+				48E4E74CDDD376AE2367F67B /* Pods_FruitApp.framework */,
+				EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60FC73220DAF1E900A3D857 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B60FC73F20DB150800A3D857 /* protocol */,
+				B60FC73C20DAF51E00A3D857 /* util */,
+				B60FC73B20DAF51600A3D857 /* model */,
+				B60FC73320DAF1FD00A3D857 /* request */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		B60FC73320DAF1FD00A3D857 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				B60FC73920DAF50400A3D857 /* AnalyticsRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		B60FC73620DAF22500A3D857 /* analytics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = analytics;
+			sourceTree = "<group>";
+		};
+		B60FC73B20DAF51600A3D857 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B60FC73720DAF23300A3D857 /* AnalyticsEvent.swift */,
+				B60FC73D20DAF6AF00A3D857 /* AnalyticsEventDetail.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B60FC73C20DAF51E00A3D857 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B60FC73420DAF21B00A3D857 /* AnalyticsTracker.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		B60FC73F20DB150800A3D857 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B60FC74020DB151800A3D857 /* AnalyticsDisplayTrackable.swift */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 		B63DA15720D9BFFE00BEA8A0 /* Fruit */ = {
@@ -241,8 +302,8 @@
 				B680833020D846CE0090362C /* FruitApp */,
 				B680834520D846D00090362C /* FruitAppTests */,
 				B680832F20D846CE0090362C /* Products */,
-				D0A67ED25200CA259346DAED /* Pods */,
-				1BF9FC6BF33D6E59E3EBC1C9 /* Frameworks */,
+				FCE1237AAE3C7EDF33922C74 /* Pods */,
+				90834CB1DF877B66145D36F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +322,7 @@
 				B6B2C49420D853470057ABD9 /* App */,
 				B6B2C49920D854BD0057ABD9 /* Fruit */,
 				B6B2C4FC20D994D40057ABD9 /* FruitDetail */,
+				B60FC73220DAF1E900A3D857 /* Analytics */,
 				B6B2C49820D8542C0057ABD9 /* Shared */,
 				B6B2C48D20D84A8E0057ABD9 /* SupportFiles */,
 				B680833D20D846D00090362C /* Info.plist */,
@@ -394,6 +456,7 @@
 		B6B2C4C420D85AA90057ABD9 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B60FC73620DAF22500A3D857 /* analytics */,
 				B6B2C4B520D85A810057ABD9 /* error */,
 				B6B2C4BD20D85A900057ABD9 /* ApiResponse.swift */,
 				B6B2C4BF20D85A900057ABD9 /* HttpMethod.swift */,
@@ -603,13 +666,13 @@
 			path = ../../../ShoppingApp/ShoppingApp/Shared/extension;
 			sourceTree = "<group>";
 		};
-		D0A67ED25200CA259346DAED /* Pods */ = {
+		FCE1237AAE3C7EDF33922C74 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A9F1C1048BD9A933682B53A0 /* Pods-FruitApp.debug.xcconfig */,
-				D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */,
-				BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */,
-				DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */,
+				EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */,
+				80F7E48293A8E78194C34FFF /* Pods-FruitApp.release.xcconfig */,
+				3C1950C0D1504FFA5D083776 /* Pods-FruitAppTests.debug.xcconfig */,
+				5B47C4A6CCF71CAE4112172A /* Pods-FruitAppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -621,12 +684,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B680834B20D846D00090362C /* Build configuration list for PBXNativeTarget "FruitApp" */;
 			buildPhases = (
-				F5F3C2EEFEEAE916EF7D3FB4 /* [CP] Check Pods Manifest.lock */,
+				470104FA3A42BB0519FFFB91 /* [CP] Check Pods Manifest.lock */,
 				B680832A20D846CE0090362C /* Sources */,
 				B680832B20D846CE0090362C /* Frameworks */,
 				B680832C20D846CE0090362C /* Resources */,
-				B7F6184324EAA88377CE8CC6 /* [CP] Embed Pods Frameworks */,
 				B6B2C48E20D84ACA0057ABD9 /* SwiftLint */,
+				3873BAC4041655A08B162556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -641,11 +704,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B680834E20D846D00090362C /* Build configuration list for PBXNativeTarget "FruitAppTests" */;
 			buildPhases = (
-				B666CD7E98F5009C2BE0A9A8 /* [CP] Check Pods Manifest.lock */,
+				43FD22E711093B93C82B7D45 /* [CP] Check Pods Manifest.lock */,
 				B680833E20D846D00090362C /* Sources */,
 				B680833F20D846D00090362C /* Frameworks */,
 				B680834020D846D00090362C /* Resources */,
-				F8DA2E3C486487F34D846833 /* [CP] Embed Pods Frameworks */,
+				01F0F68FDE645546A0083093 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -720,77 +783,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B666CD7E98F5009C2BE0A9A8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruitAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B6B2C48E20D84ACA0057ABD9 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"$SRCROOT/.swiftlint.yml\"\necho \"swift lint run\"";
-		};
-		B7F6184324EAA88377CE8CC6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F5F3C2EEFEEAE916EF7D3FB4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruitApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8DA2E3C486487F34D846833 /* [CP] Embed Pods Frameworks */ = {
+		01F0F68FDE645546A0083093 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -812,6 +805,76 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3873BAC4041655A08B162556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43FD22E711093B93C82B7D45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		470104FA3A42BB0519FFFB91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B2C48E20D84ACA0057ABD9 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"$SRCROOT/.swiftlint.yml\"\necho \"swift lint run\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -819,6 +882,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60FC74120DB151800A3D857 /* AnalyticsDisplayTrackable.swift in Sources */,
 				B6B2C55420D9B5AB0057ABD9 /* UITableView+Extension.swift in Sources */,
 				B6B2C4F920D85CA20057ABD9 /* FruitsResource.swift in Sources */,
 				B6B2C4B920D85A810057ABD9 /* ApiError.swift in Sources */,
@@ -827,16 +891,20 @@
 				B6B2C4EC20D85B390057ABD9 /* ViewModel.swift in Sources */,
 				B6B2C49C20D855760057ABD9 /* FruitsViewController.swift in Sources */,
 				B6B2C50620D996A60057ABD9 /* FruitDetailViewModel.swift in Sources */,
+				B60FC73A20DAF50400A3D857 /* AnalyticsRequest.swift in Sources */,
 				B6B2C4C120D85A900057ABD9 /* ApiResponse.swift in Sources */,
+				B60FC73820DAF23300A3D857 /* AnalyticsEvent.swift in Sources */,
 				B6B2C4FB20D85D290057ABD9 /* FruitResource.swift in Sources */,
 				B6B2C51820D9A2B10057ABD9 /* PriceFormattable.swift in Sources */,
 				B6B2C51220D99DE90057ABD9 /* FruitDetailRepsentable.swift in Sources */,
 				B6B2C4EE20D85B390057ABD9 /* Resource.swift in Sources */,
 				B6B2C4A120D8580F0057ABD9 /* FruitsRouter.swift in Sources */,
 				B6B2C51720D9A2A90057ABD9 /* WeightFormattable.swift in Sources */,
+				B60FC73E20DAF6AF00A3D857 /* AnalyticsEventDetail.swift in Sources */,
 				B680833220D846CE0090362C /* AppDelegate.swift in Sources */,
 				B6B2C4BB20D85A810057ABD9 /* ClassError.swift in Sources */,
 				B6B2C4EF20D85B390057ABD9 /* ApiRequest.swift in Sources */,
+				B60FC73520DAF21B00A3D857 /* AnalyticsTracker.swift in Sources */,
 				B6B2C4D620D85AC20057ABD9 /* UtilityCreatable.swift in Sources */,
 				B6B2C4D020D85AC20057ABD9 /* RemoteCreatable.swift in Sources */,
 				B6B2C4C020D85A900057ABD9 /* HttpStatusCode.swift in Sources */,
@@ -1029,17 +1097,14 @@
 		};
 		B680834C20D846D00090362C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9F1C1048BD9A933682B53A0 /* Pods-FruitApp.debug.xcconfig */;
+			baseConfigurationReference = EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.fruitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1049,17 +1114,14 @@
 		};
 		B680834D20D846D00090362C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D620D63D11D7BC05CBED0AB2 /* Pods-FruitApp.release.xcconfig */;
+			baseConfigurationReference = 80F7E48293A8E78194C34FFF /* Pods-FruitApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.fruitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1069,18 +1131,14 @@
 		};
 		B680834F20D846D00090362C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA8A0DACB6FE62105A1F91BB /* Pods-FruitAppTests.debug.xcconfig */;
+			baseConfigurationReference = 3C1950C0D1504FFA5D083776 /* Pods-FruitAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.FruitAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1091,18 +1149,14 @@
 		};
 		B680835020D846D00090362C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA91BB790C67FBB8477D605F /* Pods-FruitAppTests.release.xcconfig */;
+			baseConfigurationReference = 5B47C4A6CCF71CAE4112172A /* Pods-FruitAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.FruitAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

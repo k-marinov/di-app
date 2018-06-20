@@ -1,6 +1,6 @@
 import RxSwift
 
-class FruitsViewModel: ViewModel {
+class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
 
     private let disposeBag: DisposeBag = DisposeBag()
     private(set) var isLoading: PublishSubject<Bool> = PublishSubject<Bool>()
@@ -8,14 +8,25 @@ class FruitsViewModel: ViewModel {
     private(set) var dataSource = TableViewDataSource<FruitResource, FruitCell>()
     private(set) var delegate: TableViewDelegate = TableViewDelegate()
     private(set) var fruitService: FruitService
-    private(set) var fruitDetailRouter: FruitDetailRouter!
+    private(set) var fruitDetailRouter: FruitDetailRouter
     private var componentCreatable: ComponentCreatable
+    private var analyticsTracker: AnalyticsTracker
+    var displayEventStartDate: Date!
 
     required init(componentCreatable: ComponentCreatable) {
         self.componentCreatable = componentCreatable
         fruitService = componentCreatable.create(with: componentCreatable)
         fruitDetailRouter = componentCreatable.create()
+        analyticsTracker = componentCreatable.create()
         subscribe()
+    }
+
+    func tracker() -> AnalyticsTracker {
+        return analyticsTracker
+    }
+
+    func rxDisposeBag() -> DisposeBag {
+        return disposeBag
     }
 
     func subscribe() {

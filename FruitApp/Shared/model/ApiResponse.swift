@@ -20,7 +20,7 @@ struct ApiResponse {
             do {
                 return try JSONDecoder().decode(RESOURCE.self, from: data!)
             } catch let error {
-                print("decoding failed log error", error)
+                print("decoding failed with error", error)
             }
         }
         return nil
