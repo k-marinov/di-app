@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		42094E3ACDD58A9C3C96A6C0 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */; };
 		52867599A5E63541964F200D /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F485DA0F52F61807EA2EE96B /* Pods_FruitAppTests.framework */; };
+		B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC72E20DAE78E00A3D857 /* FruitServiceTests.swift */; };
 		B63DA15220D9BD8600BEA8A0 /* MockComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */; };
 		B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */; };
 		B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */; };
@@ -91,6 +92,7 @@
 /* Begin PBXFileReference section */
 		1A87BF6213C33077013471E9 /* Pods_FruitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F1C1048BD9A933682B53A0 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B60FC72E20DAE78E00A3D857 /* FruitServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitServiceTests.swift; sourceTree = "<group>"; };
 		B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComponentCreator.swift; sourceTree = "<group>"; };
 		B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitService.swift; sourceTree = "<group>"; };
 		B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitDetailRouter.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		B63DA15920D9C01700BEA8A0 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				B60FC72E20DAE78E00A3D857 /* FruitServiceTests.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -872,6 +875,7 @@
 				B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */,
 				B6B2C53520D9AA500057ABD9 /* HttpResponseMother.swift in Sources */,
 				B6B2C53720D9AA500057ABD9 /* FruitMother.swift in Sources */,
+				B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */,
 				B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */,
 				B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */,
 				B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */,
