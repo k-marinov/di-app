@@ -12,6 +12,10 @@ class MockComponentCreator: ComponentCreatable {
         return fruitService as! MockFruitService
     }
 
+    func mockFruitDetailRouter() -> MockFruitDetailRouter {
+        return fruitDetailRouter as! MockFruitDetailRouter
+    }
+
     func create(with componentCreatable: ComponentCreatable) -> FruitService {
         return fruitService
     }
