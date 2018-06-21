@@ -12,7 +12,7 @@ class PriceFormattableTests: XCTestCase {
 
     func testPriceInPoundsAndPencesFormatted_whenValue511_returnsFormatted() {
         let formattable = MockPriceFormattable()
-        formattable.mockValue = 0
+        formattable.mockValue = 511
         XCTAssertEqual(formattable.priceInPoundsAndPencesFormatted(), "£5.11")
     }
 
