@@ -10,7 +10,7 @@ class FruitDetailViewModel: ViewModel, AnalyticsDisplayTrackable {
 
     required init(componentCreatable: ComponentCreatable, fruit: FruitDetailRepresentable) {
         fruitService = componentCreatable.create(with: componentCreatable)
-        analyticsTracker = componentCreatable.create()
+        analyticsTracker = componentCreatable.create(with: componentCreatable)
         self.fruit = fruit
     }
 

@@ -3,7 +3,11 @@ import RxSwift
 
 class AnalyticsTracker {
 
-    private let httpClient: HttpClient = HttpClient()
+    private var httpClient: HttpClient
+
+    required init(with componentCreatable: ComponentCreatable) {
+        httpClient = componentCreatable.create()
+    }
 
     func logDisplayEvent(startDate start: Date, currentDate: Date = Date()) -> Observable<HttpStatusCode> {
         let detail = AnalyticsEventDetail(description: elapsedTimeInMilliseconds(startDate: start, currentDate: currentDate))

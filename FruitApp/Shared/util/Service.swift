@@ -1,5 +1,5 @@
 protocol Service {
 
-    init(componentCreatable: ComponentCreatable)
+    init(with componentCreatable: ComponentCreatable)
 
 }

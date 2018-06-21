@@ -3,7 +3,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private let fruitApp: FruitApp = FruitApp(componentCreatable: ComponentCreator())
+    private let fruitApp: FruitApp = FruitApp(with: ComponentCreator())
     var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
     func application(

@@ -37,7 +37,7 @@ class FruitsViewControllerTests: XCTestCase, ViewControllerCreatable {
 
     private func fruitsViewController() -> FruitsViewController {
         return createViewController(
-            with: FruitsViewModel(componentCreatable: creator),
+            with: FruitsViewModel(with: creator),
             viewControllerType: FruitsViewController.self)
             as! FruitsViewController
     }

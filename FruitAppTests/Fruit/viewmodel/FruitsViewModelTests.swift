@@ -14,7 +14,7 @@ class FruitsViewModelTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        viewModel = FruitsViewModel(componentCreatable: creator)
+        viewModel = FruitsViewModel(with: creator)
         isLoadingCollector = RxCollector<Bool>().collect(from: viewModel.isLoading.asObservable())
         reloadDataCollector = RxCollector<Void>().collect(from: viewModel.reloadData.asObservable())
     }

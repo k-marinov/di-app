@@ -4,22 +4,22 @@ protocol UtilityCreatable {
 
     func create() -> HttpClient
 
-    func create() -> AnalyticsTracker
+    func create(with componentCreatable: ComponentCreatable) -> AnalyticsTracker
 
 }
 
 extension UtilityCreatable {
 
     func create(with componentCreatable: ComponentCreatable) -> ApiClient {
-        return ApiClient(componentCreatable: componentCreatable)
+        return ApiClient(with: componentCreatable)
     }
 
     func create() -> HttpClient {
         return HttpClient()
     }
 
-    func create() -> AnalyticsTracker {
-        return AnalyticsTracker()
+    func create(with componentCreatable: ComponentCreatable) -> AnalyticsTracker {
+        return AnalyticsTracker(with: componentCreatable)
     }
 
 }

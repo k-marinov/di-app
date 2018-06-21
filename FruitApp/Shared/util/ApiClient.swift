@@ -8,9 +8,9 @@ class ApiClient {
     private let disposeBag: DisposeBag = DisposeBag()
     private var requestStartDate: Date!
 
-    required init(componentCreatable: ComponentCreatable) {
+    required init(with componentCreatable: ComponentCreatable) {
         httpClient = componentCreatable.create()
-        tracker = componentCreatable.create()
+        tracker = componentCreatable.create(with: componentCreatable)
     }
 
     func request(with request: ApiRequest) -> Observable<ApiResponse> {

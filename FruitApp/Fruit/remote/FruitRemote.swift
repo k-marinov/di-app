@@ -4,7 +4,7 @@ class FruitRemote {
 
     private let apiClient: ApiClient
 
-    required init(componentCreatable: ComponentCreatable) {
+    required init(with componentCreatable: ComponentCreatable) {
         apiClient = componentCreatable.create(with: componentCreatable)
     }
 

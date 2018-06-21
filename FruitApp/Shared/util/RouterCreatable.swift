@@ -11,7 +11,7 @@ protocol RouterCreatable {
 extension RouterCreatable {
 
     func create(with componentCreatable: ComponentCreatable) -> FruitAppRouter {
-        return FruitAppRouter(componentCreatable: componentCreatable)
+        return FruitAppRouter(with: componentCreatable)
     }
 
     func create() -> FruitsRouter {

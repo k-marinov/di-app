@@ -6,7 +6,7 @@ import RxSwift
 class FruitServiceTests: XCTestCase {
 
     private let mocker: FruitHttpMocker = FruitHttpMocker()
-    private let service: FruitService = FruitService(componentCreatable: ComponentCreator())
+    private let service: FruitService = FruitService(with: ComponentCreator())
     private let disposeBag: DisposeBag = DisposeBag()
 
     override func setUp() {

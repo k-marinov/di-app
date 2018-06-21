@@ -13,11 +13,11 @@ class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
     private var analyticsTracker: AnalyticsTracker
     var displayEventStartDate: Date?
 
-    required init(componentCreatable: ComponentCreatable) {
+    required init(with componentCreatable: ComponentCreatable) {
         self.componentCreatable = componentCreatable
         fruitService = componentCreatable.create(with: componentCreatable)
         fruitDetailRouter = componentCreatable.create()
-        analyticsTracker = componentCreatable.create()
+        analyticsTracker = componentCreatable.create(with: componentCreatable)
         subscribe()
     }
 

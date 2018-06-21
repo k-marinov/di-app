@@ -26,7 +26,7 @@ class MockComponentCreator: ComponentCreatable {
 
     class func buildAllMocks() -> MockComponentCreator {
         let creator: MockComponentCreator = MockComponentCreator()
-        creator.fruitService = MockFruitService(componentCreatable: creator)
+        creator.fruitService = MockFruitService(with: creator)
         creator.fruitDetailRouter = MockFruitDetailRouter()
         return creator
     }

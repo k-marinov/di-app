@@ -7,7 +7,7 @@ protocol ServiceCreatable {
 extension ServiceCreatable {
 
     func create(with componentCreatable: ComponentCreatable) -> FruitService {
-        return FruitService(componentCreatable: componentCreatable)
+        return FruitService(with: componentCreatable)
     }
 
 }

@@ -4,7 +4,7 @@ class FruitService: Service {
 
     private var fruitRemote: FruitRemote
 
-    required init(componentCreatable: ComponentCreatable) {
+    required init(with componentCreatable: ComponentCreatable) {
         fruitRemote = componentCreatable.create(with: componentCreatable)
     }
 

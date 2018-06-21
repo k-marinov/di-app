@@ -83,7 +83,7 @@
 		B6B2C54820D9B0730057ABD9 /* ApiResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */; };
 		B6B2C55420D9B5AB0057ABD9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */; };
 		B6E055FD20DC2D7E003039CD /* AnalyticsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */; };
-		B6E0560120DC3569003039CD /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560020DC3569003039CD /* AnalyticsEvent.swift */; };
+		B6E0560120DC3569003039CD /* AnalyticsEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560020DC3569003039CD /* AnalyticsEventTests.swift */; };
 		BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -181,7 +181,7 @@
 		B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseTests.swift; sourceTree = "<group>"; };
 		B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRequestTests.swift; sourceTree = "<group>"; };
-		B6E0560020DC3569003039CD /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		B6E0560020DC3569003039CD /* AnalyticsEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTests.swift; sourceTree = "<group>"; };
 		EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -675,7 +675,7 @@
 		B6E055FE20DC354A003039CD /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B6E0560020DC3569003039CD /* AnalyticsEvent.swift */,
+				B6E0560020DC3569003039CD /* AnalyticsEventTests.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -971,7 +971,7 @@
 				B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */,
 				B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */,
 				B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */,
-				B6E0560120DC3569003039CD /* AnalyticsEvent.swift in Sources */,
+				B6E0560120DC3569003039CD /* AnalyticsEventTests.swift in Sources */,
 				B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */,
 				B60FC73120DAE9EF00A3D857 /* FruitsViewModelTests.swift in Sources */,
 				B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */,
