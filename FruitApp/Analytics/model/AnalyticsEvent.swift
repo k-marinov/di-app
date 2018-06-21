@@ -1,5 +1,3 @@
-import Foundation
-
 enum AnalyticsEvent {
 
     case load(AnalyticsEventDetail)

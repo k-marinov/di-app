@@ -82,6 +82,8 @@
 		B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */; };
 		B6B2C54820D9B0730057ABD9 /* ApiResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */; };
 		B6B2C55420D9B5AB0057ABD9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */; };
+		B6E055FD20DC2D7E003039CD /* AnalyticsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */; };
+		B6E0560120DC3569003039CD /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560020DC3569003039CD /* AnalyticsEvent.swift */; };
 		BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +180,8 @@
 		B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitsRequest.swift; sourceTree = "<group>"; };
 		B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseTests.swift; sourceTree = "<group>"; };
 		B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRequestTests.swift; sourceTree = "<group>"; };
+		B6E0560020DC3569003039CD /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 		EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,13 +232,6 @@
 				B60FC73920DAF50400A3D857 /* AnalyticsRequest.swift */,
 			);
 			path = request;
-			sourceTree = "<group>";
-		};
-		B60FC73620DAF22500A3D857 /* analytics */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = analytics;
 			sourceTree = "<group>";
 		};
 		B60FC73B20DAF51600A3D857 /* model */ = {
@@ -334,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				B63DA15720D9BFFE00BEA8A0 /* Fruit */,
+				B6E055FB20DC2C46003039CD /* Analytics */,
 				B6B2C54320D9AE6B0057ABD9 /* Mocks */,
 				B6B2C53820D9AD860057ABD9 /* Shared */,
 				B6B2C52920D9AA500057ABD9 /* Mothers */,
@@ -456,7 +454,6 @@
 		B6B2C4C420D85AA90057ABD9 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B60FC73620DAF22500A3D857 /* analytics */,
 				B6B2C4B520D85A810057ABD9 /* error */,
 				B6B2C4BD20D85A900057ABD9 /* ApiResponse.swift */,
 				B6B2C4BF20D85A900057ABD9 /* HttpMethod.swift */,
@@ -664,6 +661,31 @@
 			);
 			name = extension;
 			path = ../../../ShoppingApp/ShoppingApp/Shared/extension;
+			sourceTree = "<group>";
+		};
+		B6E055FB20DC2C46003039CD /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B6E055FF20DC3551003039CD /* request */,
+				B6E055FE20DC354A003039CD /* model */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		B6E055FE20DC354A003039CD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B6E0560020DC3569003039CD /* AnalyticsEvent.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B6E055FF20DC3551003039CD /* request */ = {
+			isa = PBXGroup;
+			children = (
+				B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		FCE1237AAE3C7EDF33922C74 /* Pods */ = {
@@ -949,9 +971,11 @@
 				B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */,
 				B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */,
 				B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */,
+				B6E0560120DC3569003039CD /* AnalyticsEvent.swift in Sources */,
 				B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */,
 				B60FC73120DAE9EF00A3D857 /* FruitsViewModelTests.swift in Sources */,
 				B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */,
+				B6E055FD20DC2D7E003039CD /* AnalyticsRequestTests.swift in Sources */,
 				B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */,
 				B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */,
 				B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */,
@@ -1104,7 +1128,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.fruitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1121,7 +1148,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.fruitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1138,7 +1168,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.FruitAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1156,7 +1190,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
 				INFOPLIST_FILE = FruitAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.FruitAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

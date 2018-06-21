@@ -5,20 +5,8 @@ struct AnalyticsRequest {
 
     private(set) var event: AnalyticsEvent
 
-    func asUrlRequest() -> Observable<URLRequest>  {
-        return Observable<URLRequest>.create { observer in
-            let url: URL? = URL(string: self.urlString())
-            if url == nil {
-                observer.onError(ApiRequestError.invalidUrl("can not create URL invalid with urlString=\(self.urlString())"))
-            } else {
-                observer.onNext(self.urlRequest(from: url!))
-                observer.onCompleted()
-            }
-            return Disposables.create()
-        }
-    }
-
-    private func urlRequest(from url: URL) -> URLRequest {
+    func asUrlRequest() -> URLRequest {
+        let url: URL = URL(string: self.urlString())!
         var request: URLRequest = URLRequest(url: url)
         request.httpMethod = "GET"
         request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData

@@ -28,13 +28,10 @@ class AnalyticsTracker {
         return logEvent(with: AnalyticsEvent.error(detail))
     }
 
-    func logEvent(with event: AnalyticsEvent) -> Observable<HttpStatusCode> {
+    private func logEvent(with event: AnalyticsEvent) -> Observable<HttpStatusCode> {
         let request: AnalyticsRequest = AnalyticsRequest(event: event)
-        return request.asUrlRequest()
-            .flatMap { [weak self] urlRequest -> Observable<HttpResponse> in
-                guard let `self` = self else { return Observable.empty() }
-                return self.httpClient.request(urlRequest: urlRequest)
-            }.map { response in
+        return httpClient.request(urlRequest: request.asUrlRequest())
+            .map { response in
                 return response.statusCode()
         }
     }
