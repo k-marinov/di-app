@@ -3,7 +3,6 @@ import RxSwift
 class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
 
     private let disposeBag: DisposeBag = DisposeBag()
-    private(set) var isLoading: PublishSubject<Bool> = PublishSubject<Bool>()
     private(set) var reloadData: PublishSubject<Void> = PublishSubject<Void>()
     private(set) var dataSource = TableViewDataSource<FruitResource, FruitCell>()
     private(set) var delegate: TableViewDelegate = TableViewDelegate()
@@ -58,18 +57,15 @@ class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
 
     private func onLoadFruitsStarted() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        isLoading.onNext(true)
     }
 
     private func onLoadFruitsCompleted() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        isLoading.onNext(false)
         reloadData.onNext(())
     }
 
     private func onLoadFruitsCompletedWithError() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        isLoading.onNext(false)
     }
 
 }

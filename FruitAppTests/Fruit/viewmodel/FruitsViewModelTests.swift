@@ -8,14 +8,12 @@ class FruitsViewModelTests: XCTestCase {
     let disposeBag: DisposeBag = DisposeBag()
     let creator: MockComponentCreator = MockComponentCreator.buildAllMocks()
     var viewModel: FruitsViewModel!
-    var isLoadingCollector: RxCollector<Bool>!
     var reloadDataCollector: RxCollector<Void>!
     var collectionView: UICollectionView!
 
     override func setUp() {
         super.setUp()
         viewModel = FruitsViewModel(with: creator)
-        isLoadingCollector = RxCollector<Bool>().collect(from: viewModel.isLoading.asObservable())
         reloadDataCollector = RxCollector<Void>().collect(from: viewModel.reloadData.asObservable())
     }
 
@@ -32,8 +30,6 @@ class FruitsViewModelTests: XCTestCase {
             }).disposed(by: disposeBag)
         wait(for: [expectation], timeout: Constants.timeout)
 
-        XCTAssertFalse(isLoadingCollector.results.isEmpty)
-        XCTAssertEqual(isLoadingCollector.results, [true, false])
         XCTAssertEqual(reloadDataCollector.results.count, 1)
     }
 
@@ -65,8 +61,6 @@ class FruitsViewModelTests: XCTestCase {
             }).disposed(by: disposeBag)
         wait(for: [expectation], timeout: Constants.timeout)
 
-        XCTAssertFalse(isLoadingCollector.results.isEmpty)
-        XCTAssertEqual(isLoadingCollector.results, [true, false])
         XCTAssertEqual(reloadDataCollector.results.count, 0)
     }
 
@@ -85,7 +79,6 @@ class FruitsViewModelTests: XCTestCase {
     }
 
     private func resetCollectors() {
-        isLoadingCollector.removeAll()
         reloadDataCollector.removeAll()
     }
 

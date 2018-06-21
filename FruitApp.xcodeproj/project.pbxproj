@@ -70,7 +70,6 @@
 		B6B2C51820D9A2B10057ABD9 /* PriceFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51320D9A21E0057ABD9 /* PriceFormattable.swift */; };
 		B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51A20D9A9E80057ABD9 /* FileHelper.swift */; };
 		B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51B20D9A9E80057ABD9 /* RxCollector.swift */; };
-		B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C51C20D9A9E80057ABD9 /* NibCreator.swift */; };
 		B6B2C52620D9A9F60057ABD9 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C52220D9A9F60057ABD9 /* empty.json */; };
 		B6B2C52720D9A9F60057ABD9 /* apple.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C52320D9A9F60057ABD9 /* apple.json */; };
 		B6B2C52820D9A9F60057ABD9 /* fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B2C52420D9A9F60057ABD9 /* fruits.json */; };
@@ -176,7 +175,6 @@
 		B6B2C51520D9A24A0057ABD9 /* WeightFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightFormattable.swift; sourceTree = "<group>"; };
 		B6B2C51A20D9A9E80057ABD9 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		B6B2C51B20D9A9E80057ABD9 /* RxCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCollector.swift; sourceTree = "<group>"; };
-		B6B2C51C20D9A9E80057ABD9 /* NibCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCreator.swift; sourceTree = "<group>"; };
 		B6B2C52220D9A9F60057ABD9 /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		B6B2C52320D9A9F60057ABD9 /* apple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apple.json; sourceTree = "<group>"; };
 		B6B2C52420D9A9F60057ABD9 /* fruits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fruits.json; sourceTree = "<group>"; };
@@ -601,7 +599,6 @@
 			children = (
 				B6B2C51A20D9A9E80057ABD9 /* FileHelper.swift */,
 				B6B2C51B20D9A9E80057ABD9 /* RxCollector.swift */,
-				B6B2C51C20D9A9E80057ABD9 /* NibCreator.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1003,7 +1000,6 @@
 				B6B2C53520D9AA500057ABD9 /* HttpResponseMother.swift in Sources */,
 				B6B2C53720D9AA500057ABD9 /* FruitMother.swift in Sources */,
 				B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */,
-				B6B2C51F20D9A9E80057ABD9 /* NibCreator.swift in Sources */,
 				B6B2C51D20D9A9E80057ABD9 /* FileHelper.swift in Sources */,
 				B6E0560120DC3569003039CD /* AnalyticsEventTests.swift in Sources */,
 				B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */,
