@@ -1,4 +1,4 @@
-# Shopping App
+# Fruit App
 
 ## Developer Prerequisites
 
