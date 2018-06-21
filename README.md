@@ -44,7 +44,9 @@ Pod Version 1.5.3
 
 • All analytics tracker class is fully unit tested.
 
-• Regarding the measurement of display load; It is not possible to measure the total time of the request and screen appearing, since the api request is completed asyncronously, screen is loaded beforehand.
+### Important
+
+• Regarding the measurement of display load - It is not possible to measure the total time of the api request and screen appearing, since the api request is completed asyncronously, screen is loaded beforehand, with the current implementation there is no screen that is being loaded after the api request completion. I am not sure if the current display load measurement meets the test requirement.
 
 ## TEST COVERAGE
 
