@@ -32,6 +32,20 @@ Pod Version 1.5.3
 ```CMD + R```
 
 
+## Analytics implementation
+
+• Every api request load time is logged in the **ApiClient** class
+
+• Every api request error is tracked in the **ApiClient** class
+
+• Display load is tracked in the **FruitsViewController** class - (delta time between the view did load and view did appear)
+
+• Display load is tracked in the **FruitDetailViewController** class - (delta time between the view did load and view did appear)
+
+• All analytics tracker class is fully unit tested.
+
+• Regarding the measurement of display load; It is not possible to measure the total time of the request and screen appearing, since the api request is completed asyncronously, screen is loaded beforehand.
+
 ## TEST COVERAGE
 
 70% of the classes are tested, including all the resources, services, view models and view controllers.
