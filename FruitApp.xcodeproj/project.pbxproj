@@ -84,6 +84,9 @@
 		B6B2C55420D9B5AB0057ABD9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */; };
 		B6E055FD20DC2D7E003039CD /* AnalyticsRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */; };
 		B6E0560120DC3569003039CD /* AnalyticsEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560020DC3569003039CD /* AnalyticsEventTests.swift */; };
+		B6E0560320DC3B43003039CD /* MockAnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560220DC3B43003039CD /* MockAnalyticsTracker.swift */; };
+		B6E0560520DC3D3A003039CD /* AnalyticsHttpMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560420DC3D3A003039CD /* AnalyticsHttpMocker.swift */; };
+		B6E0560820DC3E2C003039CD /* AnalyticsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560720DC3E2C003039CD /* AnalyticsTrackerTests.swift */; };
 		BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,6 +185,9 @@
 		B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRequestTests.swift; sourceTree = "<group>"; };
 		B6E0560020DC3569003039CD /* AnalyticsEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTests.swift; sourceTree = "<group>"; };
+		B6E0560220DC3B43003039CD /* MockAnalyticsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnalyticsTracker.swift; sourceTree = "<group>"; };
+		B6E0560420DC3D3A003039CD /* AnalyticsHttpMocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHttpMocker.swift; sourceTree = "<group>"; };
+		B6E0560720DC3E2C003039CD /* AnalyticsTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTrackerTests.swift; sourceTree = "<group>"; };
 		EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -631,6 +637,7 @@
 			children = (
 				B6B2C53E20D9AE0A0057ABD9 /* Constants.swift */,
 				B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */,
+				B6E0560420DC3D3A003039CD /* AnalyticsHttpMocker.swift */,
 			);
 			path = HttpMocks;
 			sourceTree = "<group>";
@@ -642,6 +649,7 @@
 				B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */,
 				B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */,
 				B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */,
+				B6E0560220DC3B43003039CD /* MockAnalyticsTracker.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -666,6 +674,7 @@
 		B6E055FB20DC2C46003039CD /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				B6E0560620DC3E0C003039CD /* util */,
 				B6E055FF20DC3551003039CD /* request */,
 				B6E055FE20DC354A003039CD /* model */,
 			);
@@ -686,6 +695,14 @@
 				B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */,
 			);
 			path = request;
+			sourceTree = "<group>";
+		};
+		B6E0560620DC3E0C003039CD /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B6E0560720DC3E2C003039CD /* AnalyticsTrackerTests.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		FCE1237AAE3C7EDF33922C74 /* Pods */ = {
@@ -966,6 +983,7 @@
 				B6B2C53B20D9AD990057ABD9 /* ApiRequestTests.swift in Sources */,
 				B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */,
 				B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */,
+				B6E0560320DC3B43003039CD /* MockAnalyticsTracker.swift in Sources */,
 				B6B2C53520D9AA500057ABD9 /* HttpResponseMother.swift in Sources */,
 				B6B2C53720D9AA500057ABD9 /* FruitMother.swift in Sources */,
 				B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */,
@@ -976,8 +994,10 @@
 				B60FC73120DAE9EF00A3D857 /* FruitsViewModelTests.swift in Sources */,
 				B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */,
 				B6E055FD20DC2D7E003039CD /* AnalyticsRequestTests.swift in Sources */,
+				B6E0560820DC3E2C003039CD /* AnalyticsTrackerTests.swift in Sources */,
 				B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */,
 				B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */,
+				B6E0560520DC3D3A003039CD /* AnalyticsHttpMocker.swift in Sources */,
 				B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */,
 				B6B2C54820D9B0730057ABD9 /* ApiResponseTests.swift in Sources */,
 			);

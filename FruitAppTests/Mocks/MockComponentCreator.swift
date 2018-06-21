@@ -4,6 +4,7 @@ class MockComponentCreator: ComponentCreatable {
 
     var fruitService: FruitService!
     var fruitDetailRouter: FruitDetailRouter!
+    var analyticsTracker: AnalyticsTracker!
 
     init() {
     }
@@ -16,6 +17,10 @@ class MockComponentCreator: ComponentCreatable {
         return fruitDetailRouter as! MockFruitDetailRouter
     }
 
+    func mockAnalyticsTracker() -> MockAnalyticsTracker {
+        return analyticsTracker as! MockAnalyticsTracker
+    }
+
     func create(with componentCreatable: ComponentCreatable) -> FruitService {
         return fruitService
     }
@@ -26,6 +31,7 @@ class MockComponentCreator: ComponentCreatable {
 
     class func buildAllMocks() -> MockComponentCreator {
         let creator: MockComponentCreator = MockComponentCreator()
+        creator.analyticsTracker = MockAnalyticsTracker(with: creator)
         creator.fruitService = MockFruitService(with: creator)
         creator.fruitDetailRouter = MockFruitDetailRouter()
         return creator
