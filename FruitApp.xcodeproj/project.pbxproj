@@ -87,6 +87,10 @@
 		B6E0560320DC3B43003039CD /* MockAnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560220DC3B43003039CD /* MockAnalyticsTracker.swift */; };
 		B6E0560520DC3D3A003039CD /* AnalyticsHttpMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560420DC3D3A003039CD /* AnalyticsHttpMocker.swift */; };
 		B6E0560820DC3E2C003039CD /* AnalyticsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560720DC3E2C003039CD /* AnalyticsTrackerTests.swift */; };
+		B6E0560A20DC406B003039CD /* PriceFormattableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560920DC406B003039CD /* PriceFormattableTests.swift */; };
+		B6E0560C20DC4089003039CD /* WeightFormattableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560B20DC4089003039CD /* WeightFormattableTests.swift */; };
+		B6E0560E20DC41F1003039CD /* MockPriceFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560D20DC41F1003039CD /* MockPriceFormattable.swift */; };
+		B6E0561020DC424B003039CD /* MockWeightFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560F20DC424B003039CD /* MockWeightFormattable.swift */; };
 		BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +192,10 @@
 		B6E0560220DC3B43003039CD /* MockAnalyticsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnalyticsTracker.swift; sourceTree = "<group>"; };
 		B6E0560420DC3D3A003039CD /* AnalyticsHttpMocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHttpMocker.swift; sourceTree = "<group>"; };
 		B6E0560720DC3E2C003039CD /* AnalyticsTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTrackerTests.swift; sourceTree = "<group>"; };
+		B6E0560920DC406B003039CD /* PriceFormattableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceFormattableTests.swift; sourceTree = "<group>"; };
+		B6E0560B20DC4089003039CD /* WeightFormattableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightFormattableTests.swift; sourceTree = "<group>"; };
+		B6E0560D20DC41F1003039CD /* MockPriceFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPriceFormattable.swift; sourceTree = "<group>"; };
+		B6E0560F20DC424B003039CD /* MockWeightFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeightFormattable.swift; sourceTree = "<group>"; };
 		EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -628,6 +636,8 @@
 			isa = PBXGroup;
 			children = (
 				B6B2C53A20D9AD990057ABD9 /* ApiRequestTests.swift */,
+				B6E0560920DC406B003039CD /* PriceFormattableTests.swift */,
+				B6E0560B20DC4089003039CD /* WeightFormattableTests.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -650,6 +660,8 @@
 				B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */,
 				B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */,
 				B6E0560220DC3B43003039CD /* MockAnalyticsTracker.swift */,
+				B6E0560D20DC41F1003039CD /* MockPriceFormattable.swift */,
+				B6E0560F20DC424B003039CD /* MockWeightFormattable.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -994,8 +1006,12 @@
 				B60FC73120DAE9EF00A3D857 /* FruitsViewModelTests.swift in Sources */,
 				B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */,
 				B6E055FD20DC2D7E003039CD /* AnalyticsRequestTests.swift in Sources */,
+				B6E0560C20DC4089003039CD /* WeightFormattableTests.swift in Sources */,
 				B6E0560820DC3E2C003039CD /* AnalyticsTrackerTests.swift in Sources */,
+				B6E0561020DC424B003039CD /* MockWeightFormattable.swift in Sources */,
 				B6B2C51E20D9A9E80057ABD9 /* RxCollector.swift in Sources */,
+				B6E0560A20DC406B003039CD /* PriceFormattableTests.swift in Sources */,
+				B6E0560E20DC41F1003039CD /* MockPriceFormattable.swift in Sources */,
 				B6B2C54120D9AE0A0057ABD9 /* Constants.swift in Sources */,
 				B6E0560520DC3D3A003039CD /* AnalyticsHttpMocker.swift in Sources */,
 				B6B2C54520D9AE7D0057ABD9 /* MockFruitsRequest.swift in Sources */,

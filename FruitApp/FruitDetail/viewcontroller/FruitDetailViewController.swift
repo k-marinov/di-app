@@ -33,7 +33,7 @@ class FruitDetailViewController: UIViewController, ModelableViewController {
 
     func setUp(detail: FruitDetailRepresentable) {
         priceLabel.text = detail.priceInPoundsAndPencesFormatted()
-        weightLabel.text = detail.weightInKilograms()
+        weightLabel.text = detail.weightInKilogramsFormatted()
         navigationItem.title = detail.name().capitalized
     }
 

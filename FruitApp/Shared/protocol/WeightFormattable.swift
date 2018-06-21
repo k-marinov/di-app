@@ -2,11 +2,13 @@ protocol WeightFormattable {
 
     func weightInGrams() -> Int
 
+    func weightInKilogramsFormatted() -> String
+    
 }
 
 extension WeightFormattable {
 
-    func weightInKilograms() -> String {
+    func weightInKilogramsFormatted() -> String {
         return "\(Double(weightInGrams()) / 1000.0) kg"
     }
 

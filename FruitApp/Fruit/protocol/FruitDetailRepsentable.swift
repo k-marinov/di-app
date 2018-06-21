@@ -4,6 +4,6 @@ protocol FruitDetailRepresentable {
 
      func priceInPoundsAndPencesFormatted() -> String
 
-     func weightInKilograms() -> String
+     func weightInKilogramsFormatted() -> String
     
 }
