@@ -7,9 +7,7 @@ protocol AnalyticsDisplayTrackable {
 
     func rxDisposeBag() -> DisposeBag
 
-    mutating func setDisplayStartDateNow()
-
-    var displayEventStartDate: Date! { get set }
+    var displayEventStartDate: Date? { get set }
 }
 
 extension AnalyticsDisplayTrackable {
@@ -22,11 +20,14 @@ extension AnalyticsDisplayTrackable {
         if displayEventStartDate == nil {
             return
         }
-        tracker().logDisplayEvent(startDate: displayEventStartDate)
+        tracker().logDisplayEvent(startDate: displayEventStartDate!)
             .subscribe()
             .disposed(by: rxDisposeBag())
-        displayEventStartDate = nil
+        resetDisplayEventStartDate()
     }
 
+    private mutating func resetDisplayEventStartDate() {
+        displayEventStartDate = nil
+    }
 
 }

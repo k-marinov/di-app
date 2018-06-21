@@ -6,6 +6,7 @@ class FruitDetailViewController: UIViewController, ModelableViewController {
     private let disposeBag: DisposeBag = DisposeBag()
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
+    
 
     private(set) lazy var fruitDetailViewModel: FruitDetailViewModel = {
         return self.viewModel as! FruitDetailViewModel

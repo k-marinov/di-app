@@ -6,7 +6,7 @@ class FruitDetailViewModel: ViewModel, AnalyticsDisplayTrackable {
     private let fruit: FruitDetailRepresentable
     private var analyticsTracker: AnalyticsTracker
     private let disposeBag: DisposeBag = DisposeBag()
-    var displayEventStartDate: Date!
+    var displayEventStartDate: Date?
 
     required init(componentCreatable: ComponentCreatable, fruit: FruitDetailRepresentable) {
         fruitService = componentCreatable.create(with: componentCreatable)
@@ -17,7 +17,7 @@ class FruitDetailViewModel: ViewModel, AnalyticsDisplayTrackable {
     func fruitDetail() -> Observable<FruitDetailRepresentable> {
         return Observable<FruitDetailRepresentable>.just(fruit)
     }
-    
+
     func tracker() -> AnalyticsTracker {
         return analyticsTracker
     }

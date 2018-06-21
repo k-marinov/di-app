@@ -11,7 +11,7 @@ class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
     private(set) var fruitDetailRouter: FruitDetailRouter
     private var componentCreatable: ComponentCreatable
     private var analyticsTracker: AnalyticsTracker
-    var displayEventStartDate: Date!
+    var displayEventStartDate: Date?
 
     required init(componentCreatable: ComponentCreatable) {
         self.componentCreatable = componentCreatable
@@ -19,14 +19,6 @@ class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
         fruitDetailRouter = componentCreatable.create()
         analyticsTracker = componentCreatable.create()
         subscribe()
-    }
-
-    func tracker() -> AnalyticsTracker {
-        return analyticsTracker
-    }
-
-    func rxDisposeBag() -> DisposeBag {
-        return disposeBag
     }
 
     func subscribe() {
@@ -50,6 +42,14 @@ class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
                 }, onSubscribe: { [weak self] in
                     self?.onLoadFruitsStarted()
             }).map { _ in return () }
+    }
+    
+    func tracker() -> AnalyticsTracker {
+        return analyticsTracker
+    }
+
+    func rxDisposeBag() -> DisposeBag {
+        return disposeBag
     }
 
     private func findFruit(at indexPath: IndexPath) -> FruitResource {
