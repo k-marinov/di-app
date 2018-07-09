@@ -10,10 +10,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        if ProcessInfo.isProductionEnabled() {
+        if isProductionEnabled() {
             _ = fruitApp.setUp(with: window!)
         }
         return true
+    }
+
+    private func isProductionEnabled() -> Bool {
+        return !ProcessInfo.processInfo.arguments.contains("TEST_MODE_ENABLED")
     }
 
 }

@@ -19,8 +19,6 @@
 		B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */; };
 		B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */; };
 		B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15B20D9C05100BEA8A0 /* FruitsViewControllerTests.swift */; };
-		B649C0CC20F345150082D1B3 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */; };
-		B649C0CD20F345180082D1B3 /* ProcessInfo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0561120DC44A9003039CD /* ProcessInfo+Extension.swift */; };
 		B680833220D846CE0090362C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680833120D846CE0090362C /* AppDelegate.swift */; };
 		B680833920D846D00090362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B680833820D846D00090362C /* Assets.xcassets */; };
 		B680833C20D846D00090362C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680833A20D846D00090362C /* LaunchScreen.storyboard */; };
@@ -185,7 +183,6 @@
 		B6B2C53F20D9AE0A0057ABD9 /* FruitHttpMocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitHttpMocker.swift; sourceTree = "<group>"; };
 		B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitsRequest.swift; sourceTree = "<group>"; };
 		B6B2C54720D9B0730057ABD9 /* ApiResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseTests.swift; sourceTree = "<group>"; };
-		B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		B6E055FC20DC2D7E003039CD /* AnalyticsRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRequestTests.swift; sourceTree = "<group>"; };
 		B6E0560020DC3569003039CD /* AnalyticsEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTests.swift; sourceTree = "<group>"; };
 		B6E0560220DC3B43003039CD /* MockAnalyticsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnalyticsTracker.swift; sourceTree = "<group>"; };
@@ -195,7 +192,6 @@
 		B6E0560B20DC4089003039CD /* WeightFormattableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightFormattableTests.swift; sourceTree = "<group>"; };
 		B6E0560D20DC41F1003039CD /* MockPriceFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPriceFormattable.swift; sourceTree = "<group>"; };
 		B6E0560F20DC424B003039CD /* MockWeightFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeightFormattable.swift; sourceTree = "<group>"; };
-		B6E0561120DC44A9003039CD /* ProcessInfo+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+Extension.swift"; sourceTree = "<group>"; };
 		EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -387,7 +383,6 @@
 		B6B2C49820D8542C0057ABD9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B6B2C54D20D9B5AA0057ABD9 /* extension */,
 				B6B2C4DA20D85B390057ABD9 /* protocol */,
 				B6B2C4C520D85AC20057ABD9 /* util */,
 				B6B2C4C420D85AA90057ABD9 /* model */,
@@ -673,16 +668,6 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		B6B2C54D20D9B5AA0057ABD9 /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				B6B2C55020D9B5AA0057ABD9 /* UITableView+Extension.swift */,
-				B6E0561120DC44A9003039CD /* ProcessInfo+Extension.swift */,
-			);
-			name = extension;
-			path = ../../../ShoppingApp/ShoppingApp/Shared/extension;
-			sourceTree = "<group>";
-		};
 		B6E055FB20DC2C46003039CD /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,7 +951,6 @@
 				B6B2C4EA20D85B390057ABD9 /* TableViewCell.swift in Sources */,
 				B6B2C4D720D85AC20057ABD9 /* RouterCreatable.swift in Sources */,
 				B6B2C50F20D9998A0057ABD9 /* FruitCell.swift in Sources */,
-				B649C0CD20F345180082D1B3 /* ProcessInfo+Extension.swift in Sources */,
 				B6B2C50C20D998970057ABD9 /* FruitDetailRouter.swift in Sources */,
 				B6B2C4B320D859B80057ABD9 /* TableViewDataSource.swift in Sources */,
 				B6B2C4EB20D85B390057ABD9 /* ViewControllerCreatable.swift in Sources */,
@@ -984,7 +968,6 @@
 				B6B2C50220D995A30057ABD9 /* FruitDetailViewController.swift in Sources */,
 				B6B2C4D220D85AC20057ABD9 /* ApiClient.swift in Sources */,
 				B6B2C4F320D85BED0057ABD9 /* FruitRemote.swift in Sources */,
-				B649C0CC20F345150082D1B3 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
