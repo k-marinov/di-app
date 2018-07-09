@@ -27,7 +27,9 @@ Pod Version 1.5.3
 
 ```git clone https://keran-marinov@bitbucket.org/keran-marinov/fruit-app.git```
 
-```pod install (inside the directory where the Podfile is located)```
+```cd fruit-app```
+
+```pod install (In the fruit-app directory where the Podfile is located, Once pod install is completed, It will generate FruitApp.xcworkspace file)```
 
 ```open FruitApp.xcworkspace```
 
