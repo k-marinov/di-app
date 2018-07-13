@@ -17,11 +17,11 @@ def test_pods
   pod 'OHHTTPStubs/Swift', '6.0.0'
 end
 
-target 'FruitApp' do
+target 'DIApp' do
   common_pods
 end
 
-target 'FruitAppTests' do
+target 'DIAppTests' do
   inherit! :search_paths
   common_pods
   test_pods

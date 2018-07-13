@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		525F173D7BACD0645247FCF4 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E4E74CDDD376AE2367F67B /* Pods_FruitApp.framework */; };
+		AF95DA847F15E5C6D44EFC61 /* Pods_DIApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B4A293421CCC0409219BBF /* Pods_DIApp.framework */; };
 		B60FC72F20DAE78E00A3D857 /* FruitServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC72E20DAE78E00A3D857 /* FruitServiceTests.swift */; };
 		B60FC73120DAE9EF00A3D857 /* FruitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73020DAE9EF00A3D857 /* FruitsViewModelTests.swift */; };
 		B60FC73520DAF21B00A3D857 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73420DAF21B00A3D857 /* AnalyticsTracker.swift */; };
@@ -90,6 +91,7 @@
 		B6E0560E20DC41F1003039CD /* MockPriceFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560D20DC41F1003039CD /* MockPriceFormattable.swift */; };
 		B6E0561020DC424B003039CD /* MockWeightFormattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E0560F20DC424B003039CD /* MockWeightFormattable.swift */; };
 		BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */; };
+		FD5A94BBE6297488B88E3035 /* Pods_DIAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA36F1C1BCCD3041C7CE62E2 /* Pods_DIAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,8 +107,11 @@
 /* Begin PBXFileReference section */
 		3C1950C0D1504FFA5D083776 /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		48E4E74CDDD376AE2367F67B /* Pods_FruitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6A78D610498CD2CC19E0FC /* Pods-DIAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DIAppTests/Pods-DIAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B47C4A6CCF71CAE4112172A /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		80F7E48293A8E78194C34FFF /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
+		8CDD5CCBA8ACD756F1FAD4B3 /* Pods-DIApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DIApp/Pods-DIApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9AF58FF514C383FF1CEF3F4A /* Pods-DIAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DIAppTests/Pods-DIAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B60FC72E20DAE78E00A3D857 /* FruitServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitServiceTests.swift; sourceTree = "<group>"; };
 		B60FC73020DAE9EF00A3D857 /* FruitsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsViewModelTests.swift; sourceTree = "<group>"; };
 		B60FC73420DAF21B00A3D857 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTracker.swift; sourceTree = "<group>"; };
@@ -118,12 +123,12 @@
 		B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitService.swift; sourceTree = "<group>"; };
 		B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitDetailRouter.swift; sourceTree = "<group>"; };
 		B63DA15B20D9C05100BEA8A0 /* FruitsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsViewControllerTests.swift; sourceTree = "<group>"; };
-		B680832E20D846CE0090362C /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B680832E20D846CE0090362C /* DIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B680833120D846CE0090362C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B680833820D846D00090362C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B680833B20D846D00090362C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B680833D20D846D00090362C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B680834220D846D00090362C /* FruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B680834220D846D00090362C /* DIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B680834820D846D00090362C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B2C49220D853410057ABD9 /* FruitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitApp.swift; sourceTree = "<group>"; };
 		B6B2C49620D853F90057ABD9 /* FruitAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppRouter.swift; sourceTree = "<group>"; };
@@ -192,8 +197,11 @@
 		B6E0560B20DC4089003039CD /* WeightFormattableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightFormattableTests.swift; sourceTree = "<group>"; };
 		B6E0560D20DC41F1003039CD /* MockPriceFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPriceFormattable.swift; sourceTree = "<group>"; };
 		B6E0560F20DC424B003039CD /* MockWeightFormattable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeightFormattable.swift; sourceTree = "<group>"; };
+		BA36F1C1BCCD3041C7CE62E2 /* Pods_DIAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DIAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C4525E0876B12B6CB3E0A8 /* Pods-DIApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DIApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DIApp/Pods-DIApp.release.xcconfig"; sourceTree = "<group>"; };
 		EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F3B4A293421CCC0409219BBF /* Pods_DIApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DIApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525F173D7BACD0645247FCF4 /* Pods_FruitApp.framework in Frameworks */,
+				AF95DA847F15E5C6D44EFC61 /* Pods_DIApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADBB3F17C9C10F5022297C5 /* Pods_FruitAppTests.framework in Frameworks */,
+				FD5A94BBE6297488B88E3035 /* Pods_DIAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +231,8 @@
 			children = (
 				48E4E74CDDD376AE2367F67B /* Pods_FruitApp.framework */,
 				EB34091B46A9AC12571CA4FB /* Pods_FruitAppTests.framework */,
+				F3B4A293421CCC0409219BBF /* Pods_DIApp.framework */,
+				BA36F1C1BCCD3041C7CE62E2 /* Pods_DIAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,8 +318,8 @@
 		B680832520D846CE0090362C = {
 			isa = PBXGroup;
 			children = (
-				B680833020D846CE0090362C /* FruitApp */,
-				B680834520D846D00090362C /* FruitAppTests */,
+				B680833020D846CE0090362C /* DIApp */,
+				B680834520D846D00090362C /* DIAppTests */,
 				B680832F20D846CE0090362C /* Products */,
 				FCE1237AAE3C7EDF33922C74 /* Pods */,
 				90834CB1DF877B66145D36F7 /* Frameworks */,
@@ -317,13 +329,13 @@
 		B680832F20D846CE0090362C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B680832E20D846CE0090362C /* FruitApp.app */,
-				B680834220D846D00090362C /* FruitAppTests.xctest */,
+				B680832E20D846CE0090362C /* DIApp.app */,
+				B680834220D846D00090362C /* DIAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B680833020D846CE0090362C /* FruitApp */ = {
+		B680833020D846CE0090362C /* DIApp */ = {
 			isa = PBXGroup;
 			children = (
 				B6B2C49420D853470057ABD9 /* App */,
@@ -334,10 +346,10 @@
 				B6B2C48D20D84A8E0057ABD9 /* SupportFiles */,
 				B680833D20D846D00090362C /* Info.plist */,
 			);
-			path = FruitApp;
+			path = DIApp;
 			sourceTree = "<group>";
 		};
-		B680834520D846D00090362C /* FruitAppTests */ = {
+		B680834520D846D00090362C /* DIAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				B63DA15720D9BFFE00BEA8A0 /* Fruit */,
@@ -350,7 +362,7 @@
 				B6B2C51920D9A9E80057ABD9 /* Helper */,
 				B680834820D846D00090362C /* Info.plist */,
 			);
-			path = FruitAppTests;
+			path = DIAppTests;
 			sourceTree = "<group>";
 		};
 		B6B2C48D20D84A8E0057ABD9 /* SupportFiles */ = {
@@ -709,6 +721,10 @@
 				80F7E48293A8E78194C34FFF /* Pods-FruitApp.release.xcconfig */,
 				3C1950C0D1504FFA5D083776 /* Pods-FruitAppTests.debug.xcconfig */,
 				5B47C4A6CCF71CAE4112172A /* Pods-FruitAppTests.release.xcconfig */,
+				8CDD5CCBA8ACD756F1FAD4B3 /* Pods-DIApp.debug.xcconfig */,
+				E8C4525E0876B12B6CB3E0A8 /* Pods-DIApp.release.xcconfig */,
+				9AF58FF514C383FF1CEF3F4A /* Pods-DIAppTests.debug.xcconfig */,
+				4F6A78D610498CD2CC19E0FC /* Pods-DIAppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -716,9 +732,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B680832D20D846CE0090362C /* FruitApp */ = {
+		B680832D20D846CE0090362C /* DIApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B680834B20D846D00090362C /* Build configuration list for PBXNativeTarget "FruitApp" */;
+			buildConfigurationList = B680834B20D846D00090362C /* Build configuration list for PBXNativeTarget "DIApp" */;
 			buildPhases = (
 				470104FA3A42BB0519FFFB91 /* [CP] Check Pods Manifest.lock */,
 				B680832A20D846CE0090362C /* Sources */,
@@ -731,14 +747,14 @@
 			);
 			dependencies = (
 			);
-			name = FruitApp;
+			name = DIApp;
 			productName = FruitApp;
-			productReference = B680832E20D846CE0090362C /* FruitApp.app */;
+			productReference = B680832E20D846CE0090362C /* DIApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B680834120D846D00090362C /* FruitAppTests */ = {
+		B680834120D846D00090362C /* DIAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B680834E20D846D00090362C /* Build configuration list for PBXNativeTarget "FruitAppTests" */;
+			buildConfigurationList = B680834E20D846D00090362C /* Build configuration list for PBXNativeTarget "DIAppTests" */;
 			buildPhases = (
 				43FD22E711093B93C82B7D45 /* [CP] Check Pods Manifest.lock */,
 				B680833E20D846D00090362C /* Sources */,
@@ -751,9 +767,9 @@
 			dependencies = (
 				B680834420D846D00090362C /* PBXTargetDependency */,
 			);
-			name = FruitAppTests;
+			name = DIAppTests;
 			productName = FruitAppTests;
-			productReference = B680834220D846D00090362C /* FruitAppTests.xctest */;
+			productReference = B680834220D846D00090362C /* DIAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -775,7 +791,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B680832920D846CE0090362C /* Build configuration list for PBXProject "FruitApp" */;
+			buildConfigurationList = B680832920D846CE0090362C /* Build configuration list for PBXProject "DIApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -788,8 +804,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B680832D20D846CE0090362C /* FruitApp */,
-				B680834120D846D00090362C /* FruitAppTests */,
+				B680832D20D846CE0090362C /* DIApp */,
+				B680834120D846D00090362C /* DIAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -825,7 +841,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-DIAppTests/Pods-DIAppTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
@@ -838,7 +854,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DIAppTests/Pods-DIAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3873BAC4041655A08B162556 /* [CP] Embed Pods Frameworks */ = {
@@ -847,7 +863,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-DIApp/Pods-DIApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -858,7 +874,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DIApp/Pods-DIApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		43FD22E711093B93C82B7D45 /* [CP] Check Pods Manifest.lock */ = {
@@ -872,7 +888,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruitAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DIAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -890,7 +906,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruitApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DIApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1007,7 +1023,7 @@
 /* Begin PBXTargetDependency section */
 		B680834420D846D00090362C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B680832D20D846CE0090362C /* FruitApp */;
+			target = B680832D20D846CE0090362C /* DIApp */;
 			targetProxy = B680834320D846D00090362C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1140,7 +1156,7 @@
 		};
 		B680834C20D846D00090362C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE3B4DBAACBC453F900B53C1 /* Pods-FruitApp.debug.xcconfig */;
+			baseConfigurationReference = 8CDD5CCBA8ACD756F1FAD4B3 /* Pods-DIApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1151,7 +1167,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.fruitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.km.ios.diapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1160,7 +1176,7 @@
 		};
 		B680834D20D846D00090362C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80F7E48293A8E78194C34FFF /* Pods-FruitApp.release.xcconfig */;
+			baseConfigurationReference = E8C4525E0876B12B6CB3E0A8 /* Pods-DIApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1171,7 +1187,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.ios.fruitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.km.ios.diapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1180,7 +1196,7 @@
 		};
 		B680834F20D846D00090362C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C1950C0D1504FFA5D083776 /* Pods-FruitAppTests.debug.xcconfig */;
+			baseConfigurationReference = 9AF58FF514C383FF1CEF3F4A /* Pods-DIAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1196,13 +1212,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitApp.app/FruitApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIApp.app/DIApp";
 			};
 			name = Debug;
 		};
 		B680835020D846D00090362C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B47C4A6CCF71CAE4112172A /* Pods-FruitAppTests.release.xcconfig */;
+			baseConfigurationReference = 4F6A78D610498CD2CC19E0FC /* Pods-DIAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1218,14 +1234,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitApp.app/FruitApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIApp.app/DIApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B680832920D846CE0090362C /* Build configuration list for PBXProject "FruitApp" */ = {
+		B680832920D846CE0090362C /* Build configuration list for PBXProject "DIApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B680834920D846D00090362C /* Debug */,
@@ -1234,7 +1250,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B680834B20D846D00090362C /* Build configuration list for PBXNativeTarget "FruitApp" */ = {
+		B680834B20D846D00090362C /* Build configuration list for PBXNativeTarget "DIApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B680834C20D846D00090362C /* Debug */,
@@ -1243,7 +1259,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B680834E20D846D00090362C /* Build configuration list for PBXNativeTarget "FruitAppTests" */ = {
+		B680834E20D846D00090362C /* Build configuration list for PBXNativeTarget "DIAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B680834F20D846D00090362C /* Debug */,
