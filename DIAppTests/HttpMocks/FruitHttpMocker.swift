@@ -1,6 +1,6 @@
 import OHHTTPStubs
 
-@testable import FruitApp
+@testable import DIApp
 
 class FruitHttpMocker {
 
@@ -49,7 +49,7 @@ class FruitHttpMocker {
 
     private func isUrlRequestSuccess(with urlRequest: URLRequest) -> Bool {
         let url: String = urlRequest.url!.absoluteURL.absoluteString
-        return url.hasSuffix("data.json")
+        return url.hasPrefix("https://raw.githubusercontent.com/k-marinov/json-resource/master/fruits.json")
     }
 
 }

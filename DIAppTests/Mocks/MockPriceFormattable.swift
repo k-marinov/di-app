@@ -1,4 +1,4 @@
-@testable import FruitApp
+@testable import DIApp
 
 class MockPriceFormattable: PriceFormattable {
 

@@ -1,12 +1,12 @@
 import XCTest
 import RxSwift
 
-@testable import FruitApp
+@testable import DIApp
 
 class FruitServiceTests: XCTestCase {
 
     private let mocker: FruitHttpMocker = FruitHttpMocker()
-    private let service: FruitService = FruitService(with: MockComponentCreator.buildAllMocks())
+    private let service: FruitService = FruitService(with: ComponentCreator())
     private let disposeBag: DisposeBag = DisposeBag()
 
     override func setUp() {

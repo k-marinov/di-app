@@ -1,6 +1,6 @@
 import Foundation
 
-@testable import FruitApp
+@testable import DIApp
 
 class FruitMother {
 

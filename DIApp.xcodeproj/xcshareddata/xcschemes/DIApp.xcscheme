@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B680834120D846D00090362C"
-               BuildableName = "FruitAppTests.xctest"
-               BlueprintName = "FruitAppTests"
-               ReferencedContainer = "container:FruitApp.xcodeproj">
+               BuildableName = "DIAppTests.xctest"
+               BlueprintName = "DIAppTests"
+               ReferencedContainer = "container:DIApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B680832D20D846CE0090362C"
-            BuildableName = "FruitApp.app"
-            BlueprintName = "FruitApp"
-            ReferencedContainer = "container:FruitApp.xcodeproj">
+            BuildableName = "DIApp.app"
+            BlueprintName = "DIApp"
+            ReferencedContainer = "container:DIApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

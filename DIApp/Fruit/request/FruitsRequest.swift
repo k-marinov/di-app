@@ -1,7 +1,7 @@
 class FruitsRequest: ApiRequest {
 
     func httpRequestUrl() -> String {
-        return "https://raw.githubusercontent.com/fmtvp/recruit-test-data/master/data.json"
+        return "https://raw.githubusercontent.com/k-marinov/json-resource/master/fruits.json"
     }
 
     func httpMethod() -> HttpMethod {

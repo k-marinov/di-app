@@ -2,9 +2,9 @@ import UIKit
 
 class FruitsRouter: ViewControllerCreatable, Navigation {
 
-    func fruitsViewController(with componentCreatable: ComponentCreatable) -> FruitsViewController {
+    func fruitsViewController(with creatable: Creatable) -> FruitsViewController {
         return createViewController(
-            with: FruitsViewModel(with: componentCreatable),
+            with: FruitsViewModel(with: creatable),
             viewControllerType: FruitsViewController.self) as! FruitsViewController
     }
 

@@ -1,6 +1,6 @@
 import RxSwift
 
-@testable import FruitApp
+@testable import DIApp
 
 class MockFruitService: FruitService {
 

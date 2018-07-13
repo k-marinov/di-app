@@ -1,7 +1,7 @@
 import Foundation
 import OHHTTPStubs
 
-@testable import FruitApp
+@testable import DIApp
 
 class AnalyticsHttpMocker {
 
@@ -50,7 +50,7 @@ class AnalyticsHttpMocker {
 
     private func isUrlRequestSuccess(with urlRequest: URLRequest) -> Bool {
         let url: String = urlRequest.url!.absoluteURL.absoluteString
-        return url.hasPrefix("https://raw.githubusercontent.com/fmtvp/recruit-test-data/master/stats")
+        return url.hasPrefix("https://raw.githubusercontent.com/k-marinov/json-resource/master/fruits.json")
     }
 
 }

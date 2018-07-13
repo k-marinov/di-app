@@ -1,7 +1,7 @@
 import XCTest
 import RxSwift
 
-@testable import FruitApp
+@testable import DIApp
 
 class ApiRequestTests: XCTestCase {
 

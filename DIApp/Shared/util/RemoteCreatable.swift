@@ -1,13 +1,13 @@
 protocol RemoteCreatable {
 
-    func create(with componentCreatable: ComponentCreatable) -> FruitRemote
+    func create(with creatable: Creatable) -> FruitRemote
 
 }
 
 extension RemoteCreatable {
 
-    func create(with componentCreatable: ComponentCreatable) -> FruitRemote {
-        return FruitRemote(with: componentCreatable)
+    func create(with creatable: Creatable) -> FruitRemote {
+        return FruitRemote(with: creatable)
     }
 
 }

@@ -8,15 +8,15 @@ class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
     private(set) var delegate: TableViewDelegate = TableViewDelegate()
     private(set) var fruitService: FruitService
     private(set) var fruitDetailRouter: FruitDetailRouter
-    private var componentCreatable: ComponentCreatable
+    private var creatable: Creatable
     private var analyticsTracker: AnalyticsTracker
     var displayEventStartDate: Date?
 
-    required init(with componentCreatable: ComponentCreatable) {
-        self.componentCreatable = componentCreatable
-        fruitService = componentCreatable.create(with: componentCreatable)
-        fruitDetailRouter = componentCreatable.create()
-        analyticsTracker = componentCreatable.create(with: componentCreatable)
+    required init(with creatable: Creatable) {
+        self.creatable = creatable
+        fruitService = creatable.create(with: creatable)
+        fruitDetailRouter = creatable.create()
+        analyticsTracker = creatable.create(with: creatable)
         subscribe()
     }
 
@@ -25,7 +25,7 @@ class FruitsViewModel: ViewModel, AnalyticsDisplayTrackable {
             .map { self.findFruit(at: $0) }
             .subscribe(onNext: { [weak self] fruit in
                 guard let `self` = self else { return }
-                self.fruitDetailRouter.showFruitDetail(componentCreatable: self.componentCreatable, fruit: fruit)
+                self.fruitDetailRouter.showFruitDetail(creatable: self.creatable, fruit: fruit)
             }).disposed(by: disposeBag)
     }
 

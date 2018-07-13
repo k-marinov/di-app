@@ -5,8 +5,8 @@ class AnalyticsTracker {
 
     private var httpClient: HttpClient
 
-    required init(with componentCreatable: ComponentCreatable) {
-        httpClient = componentCreatable.create()
+    required init(with creatable: Creatable) {
+        httpClient = creatable.create()
     }
 
     func logDisplayEvent(startDate start: Date, currentDate: Date = Date()) -> Observable<HttpStatusCode> {

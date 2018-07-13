@@ -1,12 +1,12 @@
 import UIKit
 
-@testable import FruitApp
+@testable import DIApp
 
 class MockFruitDetailRouter: FruitDetailRouter {
 
     var isShowFruitDetailCalled = false
 
-    override func showFruitDetail(componentCreatable: ComponentCreatable, fruit: FruitDetailRepresentable, animated: Bool) {
+    override func showFruitDetail(creatable: Creatable, fruit: FruitDetailRepresentable, animated: Bool) {
         isShowFruitDetailCalled = true
     }
 

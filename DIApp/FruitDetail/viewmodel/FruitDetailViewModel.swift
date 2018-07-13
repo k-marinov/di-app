@@ -8,9 +8,9 @@ class FruitDetailViewModel: ViewModel, AnalyticsDisplayTrackable {
     private let disposeBag: DisposeBag = DisposeBag()
     var displayEventStartDate: Date?
 
-    required init(componentCreatable: ComponentCreatable, fruit: FruitDetailRepresentable) {
-        fruitService = componentCreatable.create(with: componentCreatable)
-        analyticsTracker = componentCreatable.create(with: componentCreatable)
+    required init(creatable: Creatable, fruit: FruitDetailRepresentable) {
+        fruitService = creatable.create(with: creatable)
+        analyticsTracker = creatable.create(with: creatable)
         self.fruit = fruit
     }
 

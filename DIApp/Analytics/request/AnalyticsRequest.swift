@@ -15,7 +15,7 @@ struct AnalyticsRequest {
     }
 
     private func urlString() -> String {
-        var urlString: String = "https://raw.githubusercontent.com/fmtvp/recruit-test-data/master/stats"
+        var urlString: String = "https://raw.githubusercontent.com/k-marinov/json-resource/master/fruits.json"
         urlString.append("?")
         urlString.append(event.detail())
         return urlString

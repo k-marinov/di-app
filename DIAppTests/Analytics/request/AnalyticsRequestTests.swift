@@ -1,7 +1,7 @@
 import XCTest
 import RxSwift
 
-@testable import FruitApp
+@testable import DIApp
 
 class AnalyticsRequestTests: XCTestCase {
 
@@ -10,7 +10,7 @@ class AnalyticsRequestTests: XCTestCase {
     func testAsUrlRequest_whenHasValidDetail_returnsUrlRequest() {
         let detail = AnalyticsEventDetail(description: "request failed with 401")
         let request = AnalyticsRequest(event: AnalyticsEvent.error(detail))
-        let expectedUrl: String = "https://raw.githubusercontent.com/fmtvp/recruit-test-data/master/stats?"
+        let expectedUrl: String = "https://raw.githubusercontent.com/k-marinov/json-resource/master/fruits.json?"
             + "event=error&data=request%20failed%20with%20401"
   
         XCTAssertEqual(request.asUrlRequest().url?.absoluteString, expectedUrl)

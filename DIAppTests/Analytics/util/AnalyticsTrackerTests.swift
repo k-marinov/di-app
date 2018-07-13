@@ -2,7 +2,7 @@ import Foundation
 import XCTest
 import RxSwift
 
-@testable import FruitApp
+@testable import DIApp
 
 class AnalyticsTrackerTests: XCTestCase {
 

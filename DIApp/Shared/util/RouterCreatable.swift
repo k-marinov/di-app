@@ -1,6 +1,6 @@
 protocol RouterCreatable {
 
-    func create(with componentCreatable: ComponentCreatable) -> FruitAppRouter
+    func create(with creatable: Creatable) -> FruitAppRouter
 
     func create() -> FruitsRouter
 
@@ -10,8 +10,8 @@ protocol RouterCreatable {
 
 extension RouterCreatable {
 
-    func create(with componentCreatable: ComponentCreatable) -> FruitAppRouter {
-        return FruitAppRouter(with: componentCreatable)
+    func create(with creatable: Creatable) -> FruitAppRouter {
+        return FruitAppRouter(with: creatable)
     }
 
     func create() -> FruitsRouter {

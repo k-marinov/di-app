@@ -4,12 +4,12 @@ class FruitAppRouter: ViewControllerCreatable, Navigation {
 
     private let fruitsRouter: FruitsRouter
 
-    required init(with componentCreatable: ComponentCreatable) {
-        fruitsRouter = componentCreatable.create()
+    required init(with creatable: Creatable) {
+        fruitsRouter = creatable.create()
     }
 
-    func setRootViewController(to window: UIWindow, componentCreatable: ComponentCreatable) -> UIWindow {
-        let viewController = fruitsRouter.fruitsViewController(with: componentCreatable)
+    func setRootViewController(to window: UIWindow, creatable: Creatable) -> UIWindow {
+        let viewController = fruitsRouter.fruitsViewController(with: creatable)
         window.rootViewController = rootNavigationController(rootViewController: viewController)
         window.makeKeyAndVisible()
         return window

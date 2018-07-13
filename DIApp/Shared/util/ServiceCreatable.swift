@@ -1,13 +1,13 @@
 protocol ServiceCreatable {
 
-    func create(with componentCreatable: ComponentCreatable) -> FruitService
+    func create(with creatable: Creatable) -> FruitService
 
 }
 
 extension ServiceCreatable {
 
-    func create(with componentCreatable: ComponentCreatable) -> FruitService {
-        return FruitService(with: componentCreatable)
+    func create(with creatable: Creatable) -> FruitService {
+        return FruitService(with: creatable)
     }
 
 }

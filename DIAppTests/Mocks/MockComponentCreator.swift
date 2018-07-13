@@ -1,6 +1,6 @@
-@testable import FruitApp
+@testable import DIApp
 
-class MockComponentCreator: ComponentCreatable {
+class MockComponentCreator: Creatable {
 
     var fruitService: FruitService!
     var fruitDetailRouter: FruitDetailRouter!
@@ -21,7 +21,7 @@ class MockComponentCreator: ComponentCreatable {
         return analyticsTracker as! MockAnalyticsTracker
     }
 
-    func create(with componentCreatable: ComponentCreatable) -> FruitService {
+    func create(with creatable: Creatable) -> FruitService {
         return fruitService
     }
 

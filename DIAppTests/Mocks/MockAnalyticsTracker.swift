@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-@testable import FruitApp
+@testable import DIApp
 
 class MockAnalyticsTracker: AnalyticsTracker {
 

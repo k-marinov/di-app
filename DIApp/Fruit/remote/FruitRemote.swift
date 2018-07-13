@@ -4,8 +4,8 @@ class FruitRemote {
 
     private let apiClient: ApiClient
 
-    required init(with componentCreatable: ComponentCreatable) {
-        apiClient = componentCreatable.create(with: componentCreatable)
+    required init(with creatable: Creatable) {
+        apiClient = creatable.create(with: creatable)
     }
 
     func findAllFruits(with request: FruitsRequest) -> Observable<[FruitResource]> {

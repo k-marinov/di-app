@@ -4,8 +4,8 @@ class FruitService: Service {
 
     private var fruitRemote: FruitRemote
 
-    required init(with componentCreatable: ComponentCreatable) {
-        fruitRemote = componentCreatable.create(with: componentCreatable)
+    required init(with creatable: Creatable) {
+        fruitRemote = creatable.create(with: creatable)
     }
 
     func findAllFruits(with request: FruitsRequest) -> Observable<[FruitResource]> {

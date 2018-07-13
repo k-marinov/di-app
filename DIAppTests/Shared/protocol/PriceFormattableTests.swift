@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import FruitApp
+@testable import DIApp
 
 class PriceFormattableTests: XCTestCase {
 
