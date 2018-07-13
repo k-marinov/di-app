@@ -6,19 +6,20 @@ import RxSwift
 class FruitsViewModelTests: XCTestCase {
 
     let disposeBag: DisposeBag = DisposeBag()
-    let creator: MockComponentCreator = MockComponentCreator.buildAllMocks()
+    var creator: MockCreator!
     var viewModel: FruitsViewModel!
     var reloadDataCollector: RxCollector<Void>!
     var collectionView: UICollectionView!
 
     override func setUp() {
         super.setUp()
+        creator = MockCreator()
         viewModel = FruitsViewModel(with: creator)
         reloadDataCollector = RxCollector<Void>().collect(from: viewModel.reloadData.asObservable())
     }
 
     func testLoadFruits_whenSuccess_updatesUi() {
-        creator.mockFruitService().isFindAllFruitsSuccess = true
+        creator.find(MockFruitService.self).isFindAllFruitsSuccess = true
         resetCollectors()
 
         let expectation = self.expectation(description: "")
@@ -34,7 +35,7 @@ class FruitsViewModelTests: XCTestCase {
     }
 
     func testLoadFruits_whenSuccess_appendsOnceToDataSource() {
-        creator.mockFruitService().isFindAllFruitsSuccess = true
+        creator.find(MockFruitService.self).isFindAllFruitsSuccess = true
 
         let expectation = self.expectation(description: "")
         viewModel.loadFruits()
@@ -49,7 +50,7 @@ class FruitsViewModelTests: XCTestCase {
     }
 
     func testLoadFruits_whenFails_updatesUi() {
-        creator.mockFruitService().isFindAllFruitsSuccess = false
+        creator.find(MockFruitService.self).isFindAllFruitsSuccess = false
         resetCollectors()
 
         let expectation = self.expectation(description: "")
@@ -69,7 +70,7 @@ class FruitsViewModelTests: XCTestCase {
         viewModel.dataSource.appendOnce(contentsOf: FruitMother.fruits().fruits)
         viewModel.delegate.tableView(tableView(), didSelectRowAt: indexPath)
 
-        XCTAssertTrue(creator.mockFruitDetailRouter().isShowFruitDetailCalled)
+        XCTAssertTrue(creator.find(MockFruitDetailRouter.self).isShowFruitDetailCalled)
     }
 
     private func tableView() -> UITableView {

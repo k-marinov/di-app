@@ -15,7 +15,7 @@
 		B60FC73A20DAF50400A3D857 /* AnalyticsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73920DAF50400A3D857 /* AnalyticsRequest.swift */; };
 		B60FC73E20DAF6AF00A3D857 /* AnalyticsEventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC73D20DAF6AF00A3D857 /* AnalyticsEventDetail.swift */; };
 		B60FC74120DB151800A3D857 /* AnalyticsDisplayTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FC74020DB151800A3D857 /* AnalyticsDisplayTrackable.swift */; };
-		B63DA15220D9BD8600BEA8A0 /* MockComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */; };
+		B63DA15220D9BD8600BEA8A0 /* MockCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15120D9BD8600BEA8A0 /* MockCreator.swift */; };
 		B63DA15420D9BD9000BEA8A0 /* MockFruitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */; };
 		B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */; };
 		B63DA15C20D9C05100BEA8A0 /* FruitsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63DA15B20D9C05100BEA8A0 /* FruitsViewControllerTests.swift */; };
@@ -114,7 +114,7 @@
 		B60FC73920DAF50400A3D857 /* AnalyticsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRequest.swift; sourceTree = "<group>"; };
 		B60FC73D20DAF6AF00A3D857 /* AnalyticsEventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventDetail.swift; sourceTree = "<group>"; };
 		B60FC74020DB151800A3D857 /* AnalyticsDisplayTrackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDisplayTrackable.swift; sourceTree = "<group>"; };
-		B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComponentCreator.swift; sourceTree = "<group>"; };
+		B63DA15120D9BD8600BEA8A0 /* MockCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCreator.swift; sourceTree = "<group>"; };
 		B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitService.swift; sourceTree = "<group>"; };
 		B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFruitDetailRouter.swift; sourceTree = "<group>"; };
 		B63DA15B20D9C05100BEA8A0 /* FruitsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsViewControllerTests.swift; sourceTree = "<group>"; };
@@ -651,7 +651,7 @@
 		B6B2C54320D9AE6B0057ABD9 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				B63DA15120D9BD8600BEA8A0 /* MockComponentCreator.swift */,
+				B63DA15120D9BD8600BEA8A0 /* MockCreator.swift */,
 				B63DA15320D9BD9000BEA8A0 /* MockFruitService.swift */,
 				B63DA15520D9BD9600BEA8A0 /* MockFruitDetailRouter.swift */,
 				B6B2C54420D9AE7D0057ABD9 /* MockFruitsRequest.swift */,
@@ -975,7 +975,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63DA15220D9BD8600BEA8A0 /* MockComponentCreator.swift in Sources */,
+				B63DA15220D9BD8600BEA8A0 /* MockCreator.swift in Sources */,
 				B6B2C53B20D9AD990057ABD9 /* ApiRequestTests.swift in Sources */,
 				B63DA15620D9BD9600BEA8A0 /* MockFruitDetailRouter.swift in Sources */,
 				B6B2C54220D9AE0A0057ABD9 /* FruitHttpMocker.swift in Sources */,

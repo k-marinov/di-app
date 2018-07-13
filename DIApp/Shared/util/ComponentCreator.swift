@@ -1,2 +1,2 @@
-class ComponentCreator: Creatable {
+class Creator: Creatable {
 }

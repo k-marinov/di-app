@@ -6,12 +6,17 @@ import RxSwift
 class FruitsViewControllerTests: XCTestCase, ViewControllerCreatable {
 
     let disposeBag: DisposeBag = DisposeBag()
-    let creator: MockComponentCreator = MockComponentCreator.buildAllMocks()
+    var creator: MockCreator!
     var viewController: FruitsViewController!
 
-    func testViewDidLoad_whenViewControllerIsLoaded_loadsFruits() {
-        creator.mockFruitService().isFindAllFruitsSuccess = true
+    override func setUp() {
+        super.setUp()
+        creator = MockCreator()
         viewController = fruitsViewController()
+    }
+
+    func testViewDidLoad_whenViewControllerIsLoaded_loadsFruits() {
+        creator.find(MockFruitService.self).isFindAllFruitsSuccess = true
 
         let expectation = self.expectation(description: "")
         viewController.fruitsViewModel
@@ -27,8 +32,7 @@ class FruitsViewControllerTests: XCTestCase, ViewControllerCreatable {
     }
 
     func testViewDidLoad_whenViewControllerIsLoaded_setsUpTableViewDataSourceAndDelegate() {
-        creator.mockFruitService().isFindAllFruitsSuccess = true
-        viewController = fruitsViewController()
+        creator.find(MockFruitService.self).isFindAllFruitsSuccess = true
         _ = viewController.view
 
         XCTAssertNotNil(viewController.tableView.dataSource)

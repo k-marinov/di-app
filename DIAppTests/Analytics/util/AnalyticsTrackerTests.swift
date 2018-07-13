@@ -7,7 +7,7 @@ import RxSwift
 class AnalyticsTrackerTests: XCTestCase {
 
     private let mocker: AnalyticsHttpMocker = AnalyticsHttpMocker()
-    private let tracker: AnalyticsTracker = AnalyticsTracker(with: ComponentCreator())
+    private let tracker: AnalyticsTracker = AnalyticsTracker(with: Creator())
     private let disposeBag: DisposeBag = DisposeBag()
 
     override func setUp() {
