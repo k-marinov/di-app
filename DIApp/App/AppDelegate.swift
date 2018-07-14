@@ -3,7 +3,6 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private let fruitApp: FruitApp = FruitApp(with: Creator())
     var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
     func application(
@@ -11,13 +10,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         if isProductionEnabled() {
-            _ = fruitApp.setUp(with: window!)
+            window?.rootViewController = UINavigationController(rootViewController: userViewController())
+            window?.makeKeyAndVisible()
         }
         return true
     }
 
     private func isProductionEnabled() -> Bool {
         return !ProcessInfo.processInfo.arguments.contains("TEST_MODE_ENABLED")
+    }
+
+    func userViewController() -> UserViewController {
+        let identifier: String = "\(UserViewController.self)"
+        let storyboard: UIStoryboard = UIStoryboard(name: identifier, bundle: nil)
+
+        let viewController: UserViewController = storyboard.instantiateViewController(
+            withIdentifier: identifier) as! UserViewController
+        viewController.viewModel = UserViewModel(with: Creator())
+        return viewController
     }
 
 }

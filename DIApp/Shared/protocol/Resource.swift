@@ -1,2 +1,0 @@
-protocol Resource: Decodable {
-}
