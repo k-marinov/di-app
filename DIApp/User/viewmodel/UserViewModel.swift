@@ -1,8 +1,8 @@
 class UserViewModel {
 
-    private(set) var userService: UserService
-    private(set) var accountService: AccountService
-    private(set) var friendService: FriendService
+    private let userService: UserService
+    private let accountService: AccountService
+    private let friendService: FriendService
 
     required init(with creatable: Creatable) {
         userService = creatable.create(with: creatable)
