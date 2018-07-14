@@ -1,5 +1,3 @@
-import RxSwift
-
 class UserViewModel {
 
     private(set) var userService: UserService

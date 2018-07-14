@@ -1,5 +1,4 @@
 import XCTest
-import RxSwift
 
 @testable import DIApp
 
@@ -12,7 +11,6 @@ class UserViewModelTests: XCTestCase {
         super.setUp()
         creator = MockCreator()
         userViewModel = UserViewModel(with: creator)
-        XCTAssertEqual(creator.mocks.count, 5)
     }
 
     func testUserDetails_whenHasName_appendsName() {

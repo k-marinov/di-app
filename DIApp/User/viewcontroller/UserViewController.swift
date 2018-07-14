@@ -1,5 +1,4 @@
 import UIKit
-import RxSwift
 
 class UserViewController: UIViewController {
 

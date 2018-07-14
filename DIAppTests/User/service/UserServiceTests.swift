@@ -11,7 +11,6 @@ class UserServiceTests: XCTestCase {
         super.setUp()
         creator = MockCreator()
         userService = UserService(with: creator)
-        XCTAssertEqual(creator.mocks.count, 2)
     }
 
     func testSendMessage_whenSuccess_returnsSuccessMessage() {
