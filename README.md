@@ -25,7 +25,7 @@ Pod Version 1.5.3
 
 ### Quick Start Guide 
 
-```git clone https://keran-marinov@bitbucket.org/keran-marinov/di-app.git```
+```git clone https://github.com/k-marinov/di-app.git```
 
 ```cd di-app```
 
