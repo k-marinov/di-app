@@ -16,10 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    private func isProductionEnabled() -> Bool {
-        return !ProcessInfo.processInfo.arguments.contains("TEST_MODE_ENABLED")
-    }
-
     func userViewController() -> UserViewController {
         let identifier: String = "\(UserViewController.self)"
         let storyboard: UIStoryboard = UIStoryboard(name: identifier, bundle: nil)
@@ -28,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             withIdentifier: identifier) as! UserViewController
         viewController.viewModel = UserViewModel(with: Creator())
         return viewController
+    }
+
+    private func isProductionEnabled() -> Bool {
+        return !ProcessInfo.processInfo.arguments.contains("TEST_MODE_ENABLED")
     }
 
 }
