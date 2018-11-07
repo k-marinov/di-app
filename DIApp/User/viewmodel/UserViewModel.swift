@@ -4,10 +4,10 @@ class UserViewModel {
     private let accountService: AccountService
     private let friendService: FriendService
 
-    required init(with creatable: Creatable) {
-        userService = creatable.create(with: creatable)
-        accountService = creatable.create(with: creatable)
-        friendService = creatable.create(with: creatable)
+    required init(creatable: Creatable) {
+        userService = creatable.create(creatable: creatable)
+        accountService = creatable.create(creatable: creatable)
+        friendService = creatable.create(creatable: creatable)
     }
 
     func userDetails() -> String {

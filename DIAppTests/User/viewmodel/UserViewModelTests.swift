@@ -10,7 +10,7 @@ class UserViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         creator = MockCreator()
-        userViewModel = UserViewModel(with: creator)
+        userViewModel = UserViewModel(creatable: creator)
     }
 
     func testUserDetails_whenHasName_appendsName() {
@@ -79,7 +79,7 @@ class UserViewModelTests: XCTestCase {
     func testConfiguration() {
         let creator = MockCreator()
         creator.addMock(key: "\(MockUserService.self)", value: MockUserService(creatable: MockCreator(), configuration: "MockConfiguration"))
-        userViewModel = UserViewModel(with: creator)
+        userViewModel = UserViewModel(creatable: creator)
 
         XCTAssertEqual(creator.find(MockUserService.self).configuration, "MockConfiguration")
     }

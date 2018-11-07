@@ -5,12 +5,12 @@ class UserService: Service {
     private(set) var configuration: String = ""
 
     convenience init(creatable: Creatable, configuration: String = "DefaultConfiguration") {
-        self.init(with: creatable)
+        self.init(creatable: creatable)
         self.configuration = configuration
     }
 
-    required init(with creatable: Creatable) {
-        tracker = creatable.create(with: creatable)
+    required init(creatable: Creatable) {
+        tracker = creatable.create(creatable: creatable)
         httpClient = creatable.create()
     }
 

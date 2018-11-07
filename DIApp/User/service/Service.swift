@@ -1,5 +1,5 @@
 protocol Service {
 
-    init(with creatable: Creatable)
+    init(creatable: Creatable)
 
 }

@@ -1,6 +1,6 @@
 class AccountService: Service {
 
-    required init(with creatable: Creatable) { }
+    required init(creatable: Creatable) { }
 
     func balance() -> Int {
         return 333

@@ -3,7 +3,7 @@ class FriendService: Service {
 
     private let httpClient: HttpClient
 
-    required init(with creatable: Creatable) {
+    required init(creatable: Creatable) {
         httpClient = creatable.create()
     }
 

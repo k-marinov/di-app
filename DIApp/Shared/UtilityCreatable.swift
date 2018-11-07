@@ -1,6 +1,6 @@
 protocol UtilityCreatable {
 
-    func create(with creatable: Creatable) -> AnalyticsTracker
+    func create(creatable: Creatable) -> AnalyticsTracker
 
     func create() -> HttpClient
 
@@ -8,8 +8,8 @@ protocol UtilityCreatable {
 
 extension UtilityCreatable {
 
-    func create(with creatable: Creatable) -> AnalyticsTracker {
-        return AnalyticsTracker(with: creatable)
+    func create(creatable: Creatable) -> AnalyticsTracker {
+        return AnalyticsTracker(creatable: creatable)
     }
 
     func create() -> HttpClient {

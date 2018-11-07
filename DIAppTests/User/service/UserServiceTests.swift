@@ -10,7 +10,7 @@ class UserServiceTests: XCTestCase {
     override func setUp() {
         super.setUp()
         creator = MockCreator()
-        userService = UserService(with: creator)
+        userService = UserService(creatable: creator)
     }
 
     func testSendMessage_whenSuccess_returnsSuccessMessage() {

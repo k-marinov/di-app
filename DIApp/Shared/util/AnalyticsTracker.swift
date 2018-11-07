@@ -2,7 +2,7 @@ class AnalyticsTracker {
 
     private var httpClient: HttpClient
 
-    init(with creatable: Creatable) {
+    init(creatable: Creatable) {
         httpClient = creatable.create()
     }
 

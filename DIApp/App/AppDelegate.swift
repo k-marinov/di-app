@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let viewController: UserViewController = storyboard.instantiateViewController(
             withIdentifier: identifier) as! UserViewController
-        viewController.viewModel = UserViewModel(with: Creator())
+        viewController.viewModel = UserViewModel(creatable: Creator())
         return viewController
     }
 

@@ -19,17 +19,17 @@ class MockCreator: Creatable {
         return mocks["\(type.self)"] as! Mock
     }
 
-    func create<S: Service>(with creatable: Creatable) -> S {
-        let realClassKey: String = "\(S.self)"
+    func create<SERVICE: Service>(creatable: Creatable) -> SERVICE {
+        let realClassKey: String = "\(SERVICE.self)"
 
         let mockType = mockServiceType(with: creatable, realClassKey: realClassKey)
-        addMock(key: "\(mockType)", value: mockType.init(with: creatable))
-        return mocks["\(mockType)"] as! S
+        addMock(key: "\(mockType)", value: mockType.init(creatable: creatable))
+        return mocks["\(mockType)"] as! SERVICE
     }
 
-    func create(with creatable: Creatable) -> AnalyticsTracker {
+    func create(creatable: Creatable) -> AnalyticsTracker {
         let key: String = "\(MockAnalyticsTracker.self)"
-        addMock(key: key, value: MockAnalyticsTracker(with: creatable))
+        addMock(key: key, value: MockAnalyticsTracker(creatable: creatable))
         return mocks[key] as! AnalyticsTracker
     }
 

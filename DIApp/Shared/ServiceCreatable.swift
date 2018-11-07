@@ -1,13 +1,13 @@
 protocol ServiceCreatable {
 
-    func create<S: Service>(with creatable: Creatable) -> S
+    func create<SERVICE: Service>(creatable: Creatable) -> SERVICE
 
 }
 
 extension ServiceCreatable {
 
-    func create<S: Service>(with creatable: Creatable) -> S {
-        return S(with: creatable)
+    func create<SERVICE: Service>(creatable: Creatable) -> SERVICE {
+        return SERVICE(creatable: creatable)
     }
 
 }
