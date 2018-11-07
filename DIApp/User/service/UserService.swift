@@ -2,6 +2,12 @@ class UserService: Service {
 
     private let tracker: AnalyticsTracker
     private let httpClient: HttpClient
+    private(set) var configuration: String = ""
+
+    convenience init(creatable: Creatable, configuration: String = "DefaultConfiguration") {
+        self.init(with: creatable)
+        self.configuration = configuration
+    }
 
     required init(with creatable: Creatable) {
         tracker = creatable.create(with: creatable)

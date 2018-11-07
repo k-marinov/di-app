@@ -75,5 +75,14 @@ class UserViewModelTests: XCTestCase {
         XCTAssertEqual(userViewModel.userDetails(), "")
     }
 
+    // demonstrates adding mock class manually when has a convenience constructor
+    func testConfiguration() {
+        let creator = MockCreator()
+        creator.addMock(key: "\(MockUserService.self)", value: MockUserService(creatable: MockCreator(), configuration: "MockConfiguration"))
+        userViewModel = UserViewModel(with: creator)
+
+        XCTAssertEqual(creator.find(MockUserService.self).configuration, "MockConfiguration")
+    }
+
 }
 
