@@ -34,5 +34,5 @@ Pod Version 1.5.3
 ```CMD + R```
 
 
-## Depedency Injection with Creator and MockCreator for testing
+## Dependency Injection with Creator and MockCreator for testing
 
